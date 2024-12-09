@@ -1,0 +1,2 @@
+static ChannelWiseOperation<27,1,ap_int<13>,ap_int<4>,ap_int<14>,comp::add<ap_int<14>, ap_int<14>, ap_int<14>>> threshs             = {{{-3, -3, -3, 2, -1, 4, 4, -1, 4, 6, 3, 1, -1, 6, 7, -1, 3, -2, -1, -3,
+   -3, -5, -1, 1, 0, 5, 0}}};

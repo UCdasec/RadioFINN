@@ -1,0 +1,7 @@
+{
+  "critical_path_cycles": 972994,
+  "max_cycles": 98304,
+  "max_cycles_node_name": "StreamingMaxPool_hls_0",
+  "estimated_throughput_fps": 2543.1315104166665,
+  "estimated_latency_ns": 3891976.0
+}

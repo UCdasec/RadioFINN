@@ -135,6 +135,10 @@ RUN pip install tclwrapper==0.0.1
 # assure that we have the right setuptools version
 RUN pip install setuptools==68.2.2
 
+# Install extra custom dependencies for building model
+COPY custom_requirements.txt /tmp/custom_requirements.txt
+RUN pip install -r /tmp/custom_requirements.txt
+
 # extra environment variables for FINN compiler
 ENV VIVADO_IP_CACHE "/tmp/vivado_ip_cache"
 
