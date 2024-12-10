@@ -26,12 +26,14 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from qonnx.core.modelwrapper import ModelWrapper
-from finn.builder.build_dataflow_config import DataflowBuildConfig
 from qonnx.transformation.change_3d_tensors_to_4d import Change3DTo4DTensors
 from qonnx.transformation.general import GiveUniqueNodeNames
+
 import finn.transformation.fpgadataflow.convert_to_hw_layers as to_hw
 import finn.transformation.streamline.absorb as absorb
+from finn.builder.build_dataflow_config import DataflowBuildConfig
 from finn.transformation.fpgadataflow.set_fifo_depths import InsertAndSetFIFODepths
+
 
 def step_pre_streamline(model: ModelWrapper, cfg: DataflowBuildConfig):
     model = model.transform(Change3DTo4DTensors())
@@ -45,13 +47,15 @@ def step_convert_final_layers(model: ModelWrapper, cfg: DataflowBuildConfig):
     model = model.transform(GiveUniqueNodeNames())
     return model
 
-def step_custom_fifo(model: ModelWrapper, cfg:DataflowBuildConfig):
+
+def step_custom_fifo(model: ModelWrapper, cfg: DataflowBuildConfig):
     # print the names of the supported PYNQ boards
     from finn.util.basic import pynq_part_map
-    #print(pynq_part_map.keys())
+
+    # print(pynq_part_map.keys())
     # change this if you have a different PYNQ board, see list above
     pynq_board = "ZCU104"
     fpga_part = pynq_part_map[pynq_board]
-    #print(fpga_part)
+    # print(fpga_part)
     target_clk_ns = 10
-    model=model.transform(InsertAndSetFIFODepths(fpgapart=fpga_part,clk_ns=target_clk_ns))
+    model = model.transform(InsertAndSetFIFODepths(fpgapart=fpga_part, clk_ns=target_clk_ns))
