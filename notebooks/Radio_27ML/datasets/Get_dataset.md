@@ -1,7 +1,10 @@
+# RADIOML_2021_07_INT8
+
+## Get dataset
 https://opendata.deepsig.io/datasets/2021.07/RADIOML_2021_07_INT8.tar.gz
 
 
-The dataset comes in hdf5 format and exhibits the following structure:
+## The dataset comes in hdf5 format and exhibits the following structure:
 - 27 modulations
 - 26 SNRs per modulation (-20 dB through +30 dB in steps of 2)
 - 4096 frames per modulation-SNR combination
