@@ -1,6 +1,11 @@
-# Exporting radio modulation classification model on FPGA using FINN and Brevitas.
+# RadioFINN
 
 Forked from FINN repository: https://github.com/Xilinx/finn
+
+## Contacts:
+Boyang Wang,boyang.wang@uc.edu
+
+Phu Le, lepq@mail.uc.edu
 
 ## Step to reproduce:
 1. Clone the repository
