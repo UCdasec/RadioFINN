@@ -3,26 +3,26 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 11 09:14:07 2024
-# Process ID: 161430
-# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1
+# Start of session at: Wed Dec 11 09:51:13 2024
+# Process ID: 207201
+# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1
 # Command line: vivado -log finn_design_MVAU_rtl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MVAU_rtl_0_0.tcl
-# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1/finn_design_MVAU_rtl_0_0.vds
-# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1/vivado.jou
+# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1/finn_design_MVAU_rtl_0_0.vds
+# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1/vivado.jou
 # Running On        :Titan-I7
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.5 LTS
 # Processor Detail  :Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
-# CPU Frequency     :3700.000 MHz
+# CPU Frequency     :4392.805 MHz
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :67352 MB
 # Swap memory       :32767 MB
 # Total Virtual     :100120 MB
-# Available Virtual :94160 MB
+# Available Virtual :90947 MB
 #-----------------------------------------------------------
 source finn_design_MVAU_rtl_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1409.539 ; gain = 0.023 ; free physical = 45051 ; free virtual = 85839
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1415.512 ; gain = 0.023 ; free physical = 42958 ; free virtual = 83797
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/memstream'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0'.
@@ -133,9 +133,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 162063
+INFO: [Synth 8-7075] Helper process launched with PID 207435
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2780.418 ; gain = 305.715 ; free physical = 36573 ; free virtual = 77362
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2778.453 ; gain = 303.777 ; free physical = 33155 ; free virtual = 73997
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-9661] initial value of parameter 'PE' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_4sx4u.sv:35]
 WARNING: [Synth 8-9661] initial value of parameter 'SIMD' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_4sx4u.sv:36]
@@ -163,7 +163,7 @@ WARNING: [Synth 8-9661] initial value of parameter 'ACCU_WIDTH' is omitted [/hom
 WARNING: [Synth 8-9661] initial value of parameter 'LEN' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/replay_buffer.sv:36]
 WARNING: [Synth 8-9661] initial value of parameter 'REP' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/replay_buffer.sv:37]
 WARNING: [Synth 8-9661] initial value of parameter 'W' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/replay_buffer.sv:38]
-INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_rtl_0_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/synth/finn_design_MVAU_rtl_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_rtl_0_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/synth/finn_design_MVAU_rtl_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'MVAU_rtl_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_0_stk8ixk_/MVAU_rtl_0_wrapper.v:34]
 	Parameter IS_MVU bound to: 1 - type: integer 
 	Parameter COMPUTE_CORE bound to: mvu_8sx8u_dsp48 - type: string 
@@ -246,7 +246,7 @@ INFO: [Synth 8-6157] synthesizing module 'replay_buffer' [/home/phu/repos/Pytorc
 INFO: [Synth 8-6155] done synthesizing module 'replay_buffer' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/replay_buffer.sv:35]
 INFO: [Synth 8-6155] done synthesizing module 'mvu_vvu_axi' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_vvu_axi.sv:46]
 INFO: [Synth 8-6155] done synthesizing module 'MVAU_rtl_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_0_stk8ixk_/MVAU_rtl_0_wrapper.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_rtl_0_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/synth/finn_design_MVAU_rtl_0_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_rtl_0_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_0_0/synth/finn_design_MVAU_rtl_0_0.v:53]
 WARNING: [Synth 8-6014] Unused sequential element genPipes[0].genSIMD[0].X1_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:427]
 WARNING: [Synth 8-6014] Unused sequential element genPipes[0].genSIMD[0].X2_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:428]
 WARNING: [Synth 8-6014] Unused sequential element genPipes[0].genSIMD[0].X3_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:429]
@@ -268,18 +268,18 @@ WARNING: [Synth 8-6014] Unused sequential element genPipes[0].genSIMD[5].X3_reg 
 WARNING: [Synth 8-6014] Unused sequential element genPipes[0].Res5_reg[0] was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/mvu/mvu_8sx8u_dsp48.sv:535]
 WARNING: [Synth 8-7129] Port ap_clk2x in module mvu_vvu_axi is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2860.387 ; gain = 385.684 ; free physical = 36065 ; free virtual = 76840
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2861.391 ; gain = 386.715 ; free physical = 32891 ; free virtual = 73734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2860.387 ; gain = 385.684 ; free physical = 36052 ; free virtual = 76827
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2861.391 ; gain = 386.715 ; free physical = 32885 ; free virtual = 73728
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2860.387 ; gain = 385.684 ; free physical = 36052 ; free virtual = 76827
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2861.391 ; gain = 386.715 ; free physical = 32885 ; free virtual = 73728
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2868.387 ; gain = 0.000 ; free physical = 36014 ; free virtual = 76789
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2869.391 ; gain = 0.000 ; free physical = 32876 ; free virtual = 73719
 INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -288,15 +288,15 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2962.418 ; gain = 0.000 ; free physical = 35818 ; free virtual = 76594
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2958.422 ; gain = 0.000 ; free physical = 32840 ; free virtual = 73683
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2983.230 ; gain = 20.812 ; free physical = 35815 ; free virtual = 76590
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2979.234 ; gain = 20.812 ; free physical = 32840 ; free virtual = 73683
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2983.230 ; gain = 508.527 ; free physical = 35547 ; free virtual = 76327
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2979.234 ; gain = 504.559 ; free physical = 32795 ; free virtual = 73641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -304,17 +304,17 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2991.234 ; gain = 516.531 ; free physical = 35547 ; free virtual = 76326
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2987.238 ; gain = 512.562 ; free physical = 32795 ; free virtual = 73641
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2991.234 ; gain = 516.531 ; free physical = 35547 ; free virtual = 76326
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2987.238 ; gain = 512.562 ; free physical = 32795 ; free virtual = 73641
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6904] The RAM "replay_buffer:/Mem_reg" of size (depth=2 x width=48) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2991.234 ; gain = 516.531 ; free physical = 35545 ; free virtual = 76326
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2987.238 ; gain = 512.562 ; free physical = 32793 ; free virtual = 73640
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -359,7 +359,7 @@ WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 INFO: [Synth 8-6904] The RAM "finn_design_MVAU_rtl_0_0/inst/inst/activation_replay/Mem_reg" of size (depth=2 x width=48) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 INFO: [Synth 8-6904] The RAM "finn_design_MVAU_rtl_0_0/inst/inst/activation_replay/Mem_reg" of size (depth=2 x width=48) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2991.234 ; gain = 516.531 ; free physical = 35426 ; free virtual = 76207
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2987.238 ; gain = 512.562 ; free physical = 32763 ; free virtual = 73611
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -380,13 +380,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3427.352 ; gain = 952.648 ; free physical = 33212 ; free virtual = 73994
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3427.934 ; gain = 953.258 ; free physical = 30683 ; free virtual = 71532
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3428.352 ; gain = 953.648 ; free physical = 33200 ; free virtual = 73982
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3427.934 ; gain = 953.258 ; free physical = 30683 ; free virtual = 71532
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -406,7 +406,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3447.383 ; gain = 972.680 ; free physical = 33163 ; free virtual = 73944
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3447.965 ; gain = 973.289 ; free physical = 30663 ; free virtual = 71512
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -424,37 +424,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33096 ; free virtual = 73876
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31266 ; free virtual = 72115
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33096 ; free virtual = 73876
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31265 ; free virtual = 72115
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33093 ; free virtual = 73873
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31259 ; free virtual = 72109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33093 ; free virtual = 73873
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31259 ; free virtual = 72108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33092 ; free virtual = 73872
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31257 ; free virtual = 72106
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33091 ; free virtual = 73871
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31256 ; free virtual = 72105
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -497,18 +497,18 @@ Report Cell Usage:
 |12    |FDSE     |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33090 ; free virtual = 73870
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31256 ; free virtual = 72105
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3454.320 ; gain = 856.773 ; free physical = 33772 ; free virtual = 74552
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3454.320 ; gain = 979.617 ; free physical = 33772 ; free virtual = 74552
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3454.902 ; gain = 862.383 ; free physical = 31220 ; free virtual = 72071
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3454.902 ; gain = 980.227 ; free physical = 31220 ; free virtual = 72071
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3454.320 ; gain = 0.000 ; free physical = 33753 ; free virtual = 74533
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3454.902 ; gain = 0.000 ; free physical = 31220 ; free virtual = 72071
 INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3454.320 ; gain = 0.000 ; free physical = 34274 ; free virtual = 75054
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3454.902 ; gain = 0.000 ; free physical = 31728 ; free virtual = 72574
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 6 instances
@@ -519,19 +519,11 @@ Synth Design complete | Checksum: ae3252b9
 INFO: [Common 17-83] Releasing license: Synthesis
 136 Infos, 53 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 3454.320 ; gain = 2033.812 ; free physical = 34279 ; free virtual = 75057
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2481.004; main = 2408.950; forked = 311.237
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4237.945; main = 3436.648; forked = 1021.559
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 3454.902 ; gain = 2034.422 ; free physical = 31728 ; free virtual = 72574
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2486.508; main = 2407.009; forked = 347.751
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4227.258; main = 3437.230; forked = 1041.305
 INFO: [Coretcl 2-1174] Renamed 4 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3460.656 ; gain = 0.000 ; free physical = 34279 ; free virtual = 75056
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3461.238 ; gain = 0.000 ; free physical = 31728 ; free virtual = 72574
 INFO: [Common 17-1381] The checkpoint '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_0_0_synth_1/finn_design_MVAU_rtl_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file finn_design_MVAU_rtl_0_0_utilization_synth.rpt -pb finn_design_MVAU_rtl_0_0_utilization_synth.pb
-ERROR: Unable to successfully create or copy the sub-design checkpoint file.
-ERROR: Unable to successfully create or copy the sub-design checkpoint file.
-    while executing
-"error "ERROR: Unable to successfully create or copy the sub-design checkpoint file.""
-    invoked from within
-"if { [catch {
-  file copy -force /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_..."
-    (file "finn_design_MVAU_rtl_0_0.tcl" line 264)
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 09:14:56 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 09:52:03 2024...

@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/impl_1/finn_design_wrapper.tcl"
+  variable script "/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/impl_1/finn_design_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -105,16 +105,20 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param power.BramSDPPropagationFix 1
+  set_param power.enableCarry8RouteBelPower 1
+  set_param power.enableUnconnectedCarry8PinPower 1
   set_param chipscope.maxJobs 3
-  set_param runs.launchOptions { -jobs 6  }
+  set_param power.enableLutRouteBelPower 1
+  set_param runs.launchOptions { -jobs 10  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xczu7ev-ffvc1156-2-e
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.cache/wt [current_project]
-  set_property parent.project_path /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.xpr [current_project]
+  set_property webtalk.parent_dir /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.cache/wt [current_project]
+  set_property parent.project_path /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.xpr [current_project]
   set_property ip_repo_paths {
   /home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/memstream
   /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0
@@ -261,15 +265,15 @@ OPTRACE "set parameters" START { }
   /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_66_t9y2uv0_
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.cache/ip [current_project]
+  set_property ip_output_repo /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.dcp
+  add_files -quiet /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/synth_1/finn_design_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd
+  add_files /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.srcs/sources_1/bd/finn_design/finn_design.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }

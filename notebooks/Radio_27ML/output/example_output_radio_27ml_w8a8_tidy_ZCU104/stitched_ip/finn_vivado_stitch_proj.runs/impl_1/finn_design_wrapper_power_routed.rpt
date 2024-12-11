@@ -1,0 +1,483 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date             : Wed Dec 11 11:16:42 2024
+| Host             : Titan-I7 running 64-bit Ubuntu 22.04.5 LTS
+| Command          : report_power -file finn_design_wrapper_power_routed.rpt -pb finn_design_wrapper_power_summary_routed.pb -rpx finn_design_wrapper_power_routed.rpx
+| Design           : finn_design_wrapper
+| Device           : xczu7ev-ffvc1156-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-----------------------------------+
+| Total On-Chip Power (W)  | 285.670 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                      |
+| Power Budget Margin (W)  | NA                                |
+| Dynamic (W)              | 280.840                           |
+| Device Static (W)        | 4.830                             |
+| Effective TJA (C/W)      | 1.0                               |
+| Max Ambient (C)          | 0.0                               |
+| Junction Temperature (C) | 125.0                             |
+| Confidence Level         | Low                               |
+| Setting File             | ---                               |
+| Simulation Activity File | ---                               |
+| Design Nets Matched      | NA                                |
++--------------------------+-----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| CLB Logic                |   118.258 |    78857 |       --- |             --- |
+|   LUT as Logic           |    97.582 |    25342 |    230400 |           11.00 |
+|   Register               |    11.441 |    45377 |    460800 |            9.85 |
+|   LUT as Distributed RAM |     4.381 |      642 |    101760 |            0.63 |
+|   CARRY8                 |     2.819 |      603 |     28800 |            2.09 |
+|   LUT as Shift Register  |     2.033 |      823 |    101760 |            0.81 |
+|   BUFG                   |    <0.001 |        1 |        64 |            1.56 |
+|   Others                 |     0.000 |      658 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      320 |    230400 |            0.14 |
+| Signals                  |   141.330 |    61225 |       --- |             --- |
+| Block RAM                |    14.779 |      205 |       312 |           65.71 |
+| DSPs                     |     6.391 |      138 |      1728 |            7.99 |
+| I/O                      |     0.082 |       30 |       360 |            8.33 |
+| Static Power             |     4.830 |          |           |                 |
+| Total                    |   285.670 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint          |       0.850 |   333.401 |     329.468 |      3.933 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     0.235 |       0.000 |      0.235 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.909 |       0.851 |      0.058 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.351 |       0.000 |      0.351 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     0.056 |       0.000 |      0.056 |       NA    | Unspecified | NA         |
+| Vcco33          |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18          |       1.800 |     0.038 |       0.038 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12          |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.089 |       0.000 |      0.089 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP_DDR |       0.850 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSPLL       |       1.200 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSDDR_504  |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSDDR_PLL   |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO1_501  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO2_502  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCCO_PSIO3_503  |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCCINT_VCU      |       0.900 |     0.452 |       0.000 |      0.452 |       NA    | Unspecified | NA         |
+| MGTAVcc         |       0.900 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt         |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux       |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+* The Vccint supply current exceeds the maximum limit of the selected package.  See the PCB design user guide for limit values.
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.5                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------------------------------+-----------+
+| Name                                   | Power (W) |
++----------------------------------------+-----------+
+| finn_design_wrapper                    |   280.840 |
+|   ap_clk_IBUF_inst                     |     0.005 |
+|   finn_design_i                        |   279.138 |
+|     ChannelwiseOp_hls_0                |     0.088 |
+|       inst                             |     0.088 |
+|     ConvolutionInputGenerator_rtl_0    |     0.420 |
+|       inst                             |     0.420 |
+|     ConvolutionInputGenerator_rtl_1    |     0.622 |
+|       inst                             |     0.622 |
+|     ConvolutionInputGenerator_rtl_2    |     0.711 |
+|       inst                             |     0.711 |
+|     ConvolutionInputGenerator_rtl_3    |     0.488 |
+|       inst                             |     0.488 |
+|     ConvolutionInputGenerator_rtl_4    |     0.617 |
+|       inst                             |     0.617 |
+|     ConvolutionInputGenerator_rtl_5    |     0.484 |
+|       inst                             |     0.484 |
+|     ConvolutionInputGenerator_rtl_6    |     0.496 |
+|       inst                             |     0.496 |
+|     FMPadding_rtl_0                    |     0.076 |
+|       inst                             |     0.076 |
+|     FMPadding_rtl_1                    |     0.331 |
+|       inst                             |     0.331 |
+|     FMPadding_rtl_2                    |     0.329 |
+|       inst                             |     0.329 |
+|     FMPadding_rtl_3                    |     0.346 |
+|       inst                             |     0.346 |
+|     FMPadding_rtl_4                    |     0.269 |
+|       inst                             |     0.269 |
+|     FMPadding_rtl_5                    |     0.561 |
+|       inst                             |     0.561 |
+|     FMPadding_rtl_6                    |     0.296 |
+|       inst                             |     0.296 |
+|     LabelSelect_hls_0                  |     0.135 |
+|       inst                             |     0.135 |
+|     MVAU_rtl_0                         |     1.171 |
+|       MVAU_rtl_0                       |     0.441 |
+|       MVAU_rtl_0_wstrm                 |     0.729 |
+|     MVAU_rtl_1                         |   101.931 |
+|       MVAU_rtl_1                       |    90.320 |
+|       MVAU_rtl_1_wstrm                 |    11.611 |
+|     MVAU_rtl_2                         |    45.923 |
+|       MVAU_rtl_2                       |    40.209 |
+|       MVAU_rtl_2_wstrm                 |     5.714 |
+|     MVAU_rtl_3                         |    23.015 |
+|       MVAU_rtl_3                       |    20.320 |
+|       MVAU_rtl_3_wstrm                 |     2.695 |
+|     MVAU_rtl_4                         |    12.891 |
+|       MVAU_rtl_4                       |    11.506 |
+|       MVAU_rtl_4_wstrm                 |     1.385 |
+|     MVAU_rtl_5                         |     4.843 |
+|       MVAU_rtl_5                       |     4.439 |
+|       MVAU_rtl_5_wstrm                 |     0.405 |
+|     MVAU_rtl_6                         |     2.638 |
+|       MVAU_rtl_6                       |     2.167 |
+|       MVAU_rtl_6_wstrm                 |     0.471 |
+|     MVAU_rtl_7                         |     1.688 |
+|       MVAU_rtl_7                       |     0.966 |
+|       MVAU_rtl_7_wstrm                 |     0.722 |
+|     MVAU_rtl_8                         |     1.529 |
+|       MVAU_rtl_8                       |     1.307 |
+|       MVAU_rtl_8_wstrm                 |     0.222 |
+|     MVAU_rtl_9                         |     1.459 |
+|       MVAU_rtl_9                       |     1.232 |
+|       MVAU_rtl_9_wstrm                 |     0.227 |
+|     StreamingDataWidthConverter_rtl_0  |     0.137 |
+|       inst                             |     0.137 |
+|     StreamingDataWidthConverter_rtl_1  |     0.111 |
+|       inst                             |     0.111 |
+|     StreamingDataWidthConverter_rtl_10 |     0.185 |
+|       inst                             |     0.185 |
+|     StreamingDataWidthConverter_rtl_11 |     0.404 |
+|       inst                             |     0.404 |
+|     StreamingDataWidthConverter_rtl_12 |     0.027 |
+|       inst                             |     0.027 |
+|     StreamingDataWidthConverter_rtl_13 |     1.357 |
+|       inst                             |     1.357 |
+|     StreamingDataWidthConverter_rtl_14 |     0.204 |
+|       inst                             |     0.204 |
+|     StreamingDataWidthConverter_rtl_15 |     0.669 |
+|       inst                             |     0.669 |
+|     StreamingDataWidthConverter_rtl_16 |     0.057 |
+|       inst                             |     0.057 |
+|     StreamingDataWidthConverter_rtl_17 |     0.939 |
+|       inst                             |     0.939 |
+|     StreamingDataWidthConverter_rtl_18 |     0.184 |
+|       inst                             |     0.184 |
+|     StreamingDataWidthConverter_rtl_19 |     0.620 |
+|       inst                             |     0.620 |
+|     StreamingDataWidthConverter_rtl_2  |     0.133 |
+|       inst                             |     0.133 |
+|     StreamingDataWidthConverter_rtl_20 |     0.065 |
+|       inst                             |     0.065 |
+|     StreamingDataWidthConverter_rtl_21 |     0.096 |
+|       inst                             |     0.096 |
+|     StreamingDataWidthConverter_rtl_22 |     0.421 |
+|       inst                             |     0.421 |
+|     StreamingDataWidthConverter_rtl_23 |     0.032 |
+|       inst                             |     0.032 |
+|     StreamingDataWidthConverter_rtl_3  |     0.507 |
+|       inst                             |     0.507 |
+|     StreamingDataWidthConverter_rtl_4  |     0.040 |
+|       inst                             |     0.040 |
+|     StreamingDataWidthConverter_rtl_5  |     5.165 |
+|       inst                             |     5.165 |
+|     StreamingDataWidthConverter_rtl_6  |     0.206 |
+|       inst                             |     0.206 |
+|     StreamingDataWidthConverter_rtl_7  |     0.444 |
+|       inst                             |     0.444 |
+|     StreamingDataWidthConverter_rtl_8  |     0.040 |
+|       inst                             |     0.040 |
+|     StreamingDataWidthConverter_rtl_9  |     3.020 |
+|       inst                             |     3.020 |
+|     StreamingFIFO_rtl_0                |     0.272 |
+|       inst                             |     0.272 |
+|     StreamingFIFO_rtl_10               |     0.247 |
+|       inst                             |     0.247 |
+|     StreamingFIFO_rtl_11               |     0.043 |
+|       inst                             |     0.043 |
+|     StreamingFIFO_rtl_12               |     0.071 |
+|       inst                             |     0.071 |
+|     StreamingFIFO_rtl_13               |     2.881 |
+|       inst                             |     2.881 |
+|     StreamingFIFO_rtl_14               |     0.358 |
+|       inst                             |     0.358 |
+|     StreamingFIFO_rtl_15               |     0.107 |
+|       inst                             |     0.107 |
+|     StreamingFIFO_rtl_16               |     0.005 |
+|       inst                             |     0.005 |
+|     StreamingFIFO_rtl_17               |     0.107 |
+|       inst                             |     0.107 |
+|     StreamingFIFO_rtl_18               |     0.163 |
+|       inst                             |     0.163 |
+|     StreamingFIFO_rtl_19               |     0.145 |
+|       inst                             |     0.145 |
+|     StreamingFIFO_rtl_1_0              |     0.389 |
+|       fifo                             |     0.389 |
+|     StreamingFIFO_rtl_1_1              |     0.103 |
+|       inst                             |     0.103 |
+|     StreamingFIFO_rtl_20               |     0.028 |
+|       inst                             |     0.028 |
+|     StreamingFIFO_rtl_21               |     0.085 |
+|       inst                             |     0.085 |
+|     StreamingFIFO_rtl_22               |     1.487 |
+|       inst                             |     1.487 |
+|     StreamingFIFO_rtl_23               |     0.365 |
+|       inst                             |     0.365 |
+|     StreamingFIFO_rtl_24               |     0.102 |
+|       inst                             |     0.102 |
+|     StreamingFIFO_rtl_25               |     0.005 |
+|       inst                             |     0.005 |
+|     StreamingFIFO_rtl_26               |     0.100 |
+|       inst                             |     0.100 |
+|     StreamingFIFO_rtl_27               |     0.135 |
+|       inst                             |     0.135 |
+|     StreamingFIFO_rtl_28               |     0.126 |
+|       inst                             |     0.126 |
+|     StreamingFIFO_rtl_29               |     0.007 |
+|       inst                             |     0.007 |
+|     StreamingFIFO_rtl_2_0              |     0.408 |
+|       fifo                             |     0.408 |
+|     StreamingFIFO_rtl_2_1              |     0.108 |
+|       inst                             |     0.108 |
+|     StreamingFIFO_rtl_30               |     0.090 |
+|       inst                             |     0.090 |
+|     StreamingFIFO_rtl_31               |     0.705 |
+|       inst                             |     0.705 |
+|     StreamingFIFO_rtl_32               |     0.353 |
+|       inst                             |     0.353 |
+|     StreamingFIFO_rtl_33               |     0.115 |
+|       inst                             |     0.115 |
+|     StreamingFIFO_rtl_34               |     0.005 |
+|       inst                             |     0.005 |
+|     StreamingFIFO_rtl_35               |     0.195 |
+|       inst                             |     0.195 |
+|     StreamingFIFO_rtl_36               |     0.196 |
+|       inst                             |     0.196 |
+|     StreamingFIFO_rtl_37               |     0.162 |
+|       inst                             |     0.162 |
+|     StreamingFIFO_rtl_38               |     0.035 |
+|       inst                             |     0.035 |
+|     StreamingFIFO_rtl_39               |     0.080 |
+|       inst                             |     0.080 |
+|     StreamingFIFO_rtl_3_0              |     0.304 |
+|       fifo                             |     0.304 |
+|     StreamingFIFO_rtl_3_1              |     0.375 |
+|       fifo                             |     0.375 |
+|     StreamingFIFO_rtl_3_2              |     0.188 |
+|       inst                             |     0.188 |
+|     StreamingFIFO_rtl_3_3              |     0.140 |
+|       inst                             |     0.140 |
+|     StreamingFIFO_rtl_4                |     0.305 |
+|       fifo                             |     0.305 |
+|     StreamingFIFO_rtl_40               |     0.495 |
+|       inst                             |     0.495 |
+|     StreamingFIFO_rtl_41               |     0.303 |
+|       inst                             |     0.303 |
+|     StreamingFIFO_rtl_42               |     0.104 |
+|       inst                             |     0.104 |
+|     StreamingFIFO_rtl_43               |     0.005 |
+|       inst                             |     0.005 |
+|     StreamingFIFO_rtl_44               |     0.368 |
+|       inst                             |     0.368 |
+|     StreamingFIFO_rtl_45               |     0.193 |
+|       inst                             |     0.193 |
+|     StreamingFIFO_rtl_46               |     0.147 |
+|       inst                             |     0.147 |
+|     StreamingFIFO_rtl_47               |     0.025 |
+|       inst                             |     0.025 |
+|     StreamingFIFO_rtl_48               |     0.226 |
+|       inst                             |     0.226 |
+|     StreamingFIFO_rtl_49               |     0.160 |
+|       inst                             |     0.160 |
+|     StreamingFIFO_rtl_5                |     0.154 |
+|       inst                             |     0.154 |
+|     StreamingFIFO_rtl_50               |     0.099 |
+|       inst                             |     0.099 |
+|     StreamingFIFO_rtl_51               |     0.002 |
+|       inst                             |     0.002 |
+|     StreamingFIFO_rtl_52               |     0.066 |
+|       inst                             |     0.066 |
+|     StreamingFIFO_rtl_53               |     0.137 |
+|       inst                             |     0.137 |
+|     StreamingFIFO_rtl_54               |     0.145 |
+|       inst                             |     0.145 |
+|     StreamingFIFO_rtl_55               |     0.020 |
+|       inst                             |     0.020 |
+|     StreamingFIFO_rtl_56               |     0.144 |
+|       inst                             |     0.144 |
+|     StreamingFIFO_rtl_57               |     0.149 |
+|       inst                             |     0.149 |
+|     StreamingFIFO_rtl_58               |     0.099 |
+|       inst                             |     0.099 |
+|     StreamingFIFO_rtl_59               |     0.154 |
+|       inst                             |     0.154 |
+|     StreamingFIFO_rtl_60               |     0.120 |
+|       inst                             |     0.120 |
+|     StreamingFIFO_rtl_61               |     0.087 |
+|       inst                             |     0.087 |
+|     StreamingFIFO_rtl_62               |     0.130 |
+|       inst                             |     0.130 |
+|     StreamingFIFO_rtl_63               |     0.092 |
+|       inst                             |     0.092 |
+|     StreamingFIFO_rtl_64               |     0.121 |
+|       inst                             |     0.121 |
+|     StreamingFIFO_rtl_65               |     0.012 |
+|       inst                             |     0.012 |
+|     StreamingFIFO_rtl_66               |     0.003 |
+|       inst                             |     0.003 |
+|     StreamingFIFO_rtl_6_0              |     0.611 |
+|       fifo                             |     0.611 |
+|     StreamingFIFO_rtl_6_1              |     0.345 |
+|       fifo                             |     0.345 |
+|     StreamingFIFO_rtl_6_2              |     0.286 |
+|       fifo                             |     0.286 |
+|     StreamingFIFO_rtl_6_3              |     0.327 |
+|       fifo                             |     0.327 |
+|     StreamingFIFO_rtl_6_4              |     0.179 |
+|       inst                             |     0.179 |
+|     StreamingFIFO_rtl_7                |     0.004 |
+|       inst                             |     0.004 |
+|     StreamingFIFO_rtl_8                |     0.086 |
+|       inst                             |     0.086 |
+|     StreamingFIFO_rtl_9                |     0.194 |
+|       inst                             |     0.194 |
+|     StreamingMaxPool_hls_0             |     0.441 |
+|       inst                             |     0.441 |
+|     StreamingMaxPool_hls_1             |     0.462 |
+|       inst                             |     0.462 |
+|     StreamingMaxPool_hls_2             |     0.486 |
+|       inst                             |     0.486 |
+|     StreamingMaxPool_hls_3             |     0.467 |
+|       inst                             |     0.467 |
+|     StreamingMaxPool_hls_4             |     0.460 |
+|       inst                             |     0.460 |
+|     StreamingMaxPool_hls_5             |     0.434 |
+|       inst                             |     0.434 |
+|     StreamingMaxPool_hls_6             |     0.435 |
+|       inst                             |     0.435 |
+|     Thresholding_rtl_0                 |     3.360 |
+|       inst                             |     3.290 |
+|     Thresholding_rtl_1                 |     5.807 |
+|       inst                             |     5.736 |
+|     Thresholding_rtl_2                 |     5.427 |
+|       inst                             |     5.356 |
+|     Thresholding_rtl_3                 |     5.301 |
+|       inst                             |     5.238 |
+|     Thresholding_rtl_4                 |     4.757 |
+|       inst                             |     4.699 |
+|     Thresholding_rtl_5                 |     3.629 |
+|       inst                             |     3.612 |
+|     Thresholding_rtl_6                 |     3.810 |
+|       inst                             |     3.796 |
+|     Thresholding_rtl_7                 |     4.114 |
+|       inst                             |     4.104 |
+|     Thresholding_rtl_8                 |     4.437 |
+|       inst                             |     4.426 |
+|   m_axis_0_tready_IBUF_inst            |     0.009 |
+|   s_axis_0_tdata_IBUF[0]_inst          |     0.009 |
+|   s_axis_0_tdata_IBUF[10]_inst         |     0.008 |
+|   s_axis_0_tdata_IBUF[11]_inst         |     0.008 |
+|   s_axis_0_tdata_IBUF[12]_inst         |     0.010 |
+|   s_axis_0_tdata_IBUF[13]_inst         |     0.008 |
+|   s_axis_0_tdata_IBUF[14]_inst         |     0.008 |
+|   s_axis_0_tdata_IBUF[15]_inst         |     0.010 |
+|   s_axis_0_tdata_IBUF[1]_inst          |     0.010 |
+|   s_axis_0_tdata_IBUF[2]_inst          |     0.008 |
+|   s_axis_0_tdata_IBUF[3]_inst          |     0.010 |
+|   s_axis_0_tdata_IBUF[4]_inst          |     0.008 |
+|   s_axis_0_tdata_IBUF[5]_inst          |     0.009 |
+|   s_axis_0_tdata_IBUF[6]_inst          |     0.007 |
+|   s_axis_0_tdata_IBUF[7]_inst          |     0.009 |
+|   s_axis_0_tdata_IBUF[8]_inst          |     0.007 |
+|   s_axis_0_tdata_IBUF[9]_inst          |     0.008 |
+|   s_axis_0_tvalid_IBUF_inst            |     0.013 |
++----------------------------------------+-----------+
+
+

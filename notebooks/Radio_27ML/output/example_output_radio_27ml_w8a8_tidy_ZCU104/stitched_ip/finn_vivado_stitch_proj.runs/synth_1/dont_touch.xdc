@@ -460,4 +460,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design
 # IP: bd/finn_design/ip/finn_design_StreamingFIFO_rtl_66_0/finn_design_StreamingFIFO_rtl_66_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==finn_design_StreamingFIFO_rtl_66_0 || ORIG_REF_NAME==finn_design_StreamingFIFO_rtl_66_0} -quiet] -quiet
 
-# XDC: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc
+# XDC: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/finn_design_ooc.xdc

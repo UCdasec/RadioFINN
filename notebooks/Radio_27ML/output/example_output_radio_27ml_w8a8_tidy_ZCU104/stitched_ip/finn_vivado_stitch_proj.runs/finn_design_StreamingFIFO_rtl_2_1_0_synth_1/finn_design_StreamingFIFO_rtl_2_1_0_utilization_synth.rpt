@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
-| Date         : Wed Dec 11 09:14:52 2024
+| Date         : Wed Dec 11 09:52:00 2024
 | Host         : Titan-I7 running 64-bit Ubuntu 22.04.5 LTS
 | Command      : report_utilization -file finn_design_StreamingFIFO_rtl_2_1_0_utilization_synth.rpt -pb finn_design_StreamingFIFO_rtl_2_1_0_utilization_synth.pb
 | Design       : finn_design_StreamingFIFO_rtl_2_1_0

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="finn_design_StreamingFIFO_rtl_35_0_synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1733926442">
+<GenRun Id="finn_design_StreamingFIFO_rtl_35_0_synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1733928669">
   <File Type="VDS-TIMING-PB" Name="finn_design_StreamingFIFO_rtl_35_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="finn_design_StreamingFIFO_rtl_35_0_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="finn_design_StreamingFIFO_rtl_35_0.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="finn_design_StreamingFIFO_rtl_35_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="finn_design_StreamingFIFO_rtl_35_0_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="finn_design_StreamingFIFO_rtl_35_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="finn_design_StreamingFIFO_rtl_35_0.vds"/>
   <File Type="REPORTS-TCL" Name="finn_design_StreamingFIFO_rtl_35_0_reports.tcl"/>
   <File Type="PA-TCL" Name="finn_design_StreamingFIFO_rtl_35_0.tcl"/>
-  <File Type="RDS-DCP" Name="finn_design_StreamingFIFO_rtl_35_0.dcp"/>
-  <File Type="RDS-PROPCONSTRS" Name="finn_design_StreamingFIFO_rtl_35_0_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="finn_design_StreamingFIFO_rtl_35_0_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="finn_design_StreamingFIFO_rtl_35_0_utilization_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/finn_design_StreamingFIFO_rtl_35_0" RelGenDir="$PGENDIR/finn_design_StreamingFIFO_rtl_35_0">
     <File Path="$PSRCDIR/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_35_0/finn_design_StreamingFIFO_rtl_35_0.xci">
       <FileInfo>
@@ -44,9 +44,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,467 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 11 10:09:40 2024
+# Process ID: 284006
+# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_3_wstrm_0_synth_1
+# Command line: vivado -log finn_design_MVAU_rtl_3_wstrm_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_MVAU_rtl_3_wstrm_0.tcl
+# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_3_wstrm_0_synth_1/finn_design_MVAU_rtl_3_wstrm_0.vds
+# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_3_wstrm_0_synth_1/vivado.jou
+# Running On        :Titan-I7
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+# CPU Frequency     :4398.004 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :67352 MB
+# Swap memory       :32767 MB
+# Total Virtual     :100120 MB
+# Available Virtual :78205 MB
+#-----------------------------------------------------------
+source finn_design_MVAU_rtl_3_wstrm_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1422.508 ; gain = 0.023 ; free physical = 32974 ; free virtual = 74132
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/memstream'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_0_5seh08r4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_1_0_8otggfz7'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_1_1_vnr1l_ww'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_0_u6onkpjo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_2_0_yzbmql18'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_2_1_jnp0m9s2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_ConvolutionInputGenerator_rtl_0_1xkrlwqc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_3_0_omz_6c91'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_3_1_uiunvh86'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_3_2_sx6uffs2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_3_3_tu1jerp8'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_1_3d7clfw2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_4_csvz1vgo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_0_stk8ixk_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_5_m4p52ftv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_Thresholding_rtl_0_u8xh134b'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_6_0_9k7gg131'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_6_1_d_1akv5m'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_6_2_gzvdfaei'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_6_3_ihmxelha'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_6_4_p7mlh5ga'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingMaxPool_hls_0_zs8t69q7/project_StreamingMaxPool_hls_0/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_7_bxo7mi0c'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_2_65iqk4rh'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_8_f9kiaohv'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_1_fkxmgl6l'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_9_8r_9t71i'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_3_7nge6cj3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_10_gcsu0r62'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_ConvolutionInputGenerator_rtl_1_h9jbfs0u'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_11_3edzik0p'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_4_c96bu0nx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_12_n21zi69l'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_1_zqeudctg'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_13_mt5hx8y7'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_5_3nqrorw8'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_14_ynlzcxis'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_Thresholding_rtl_1_k3w_t2pk'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_15_bmb0v3xw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingMaxPool_hls_1_zd74_llz/project_StreamingMaxPool_hls_1/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_16_2mcpe2iw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_6_xje365x9'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_17_kwhaj0o1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_2_794dl0mc'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_18_7ehuq1rj'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_7_mupu1zh1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_19_5fofgipu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_ConvolutionInputGenerator_rtl_2_k1jy70f1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_20_nmcw0c80'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_8_u47t6mmp'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_21_aslwksf4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_2_oeq4dach'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_22_18b9ngzx'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_9_ypljhfo5'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_23_6u3txwix'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_Thresholding_rtl_2_khjrmccp'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_24_mm3xu4l1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingMaxPool_hls_2_9xlmtjbx/project_StreamingMaxPool_hls_2/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_25_31c_7vuw'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_10_8epm36d_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_26_p31wvwuz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_3_1y3cohjd'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_27_2zxrss02'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_11_f3a4lv6q'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_28_kuq3kuy4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_ConvolutionInputGenerator_rtl_3_kt9aplcm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_29_n_b3twrg'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_12_qtjzgucz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_30_c0yk6fll'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_3_0ba2zerz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_31_r06i4x1j'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_13_dumg7z42'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_32_7nq1bku9'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_Thresholding_rtl_3_dxydf12m'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_33_ubcmt18_'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingMaxPool_hls_3_rfk8vg3j/project_StreamingMaxPool_hls_3/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_34_p5zve864'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_14_iy_r484m'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_35_nsrbaxnm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_4_si84icy1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_36_jkvvkmi3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_15_zslepy95'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_37_tg0ox1xu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_ConvolutionInputGenerator_rtl_4_3ywur_xu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_38_dy3b60yu'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_16_v2m7cmuq'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_39_pz3ob1y8'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_MVAU_rtl_4_ynhrbura'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_40_0w3woewg'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_17__1pwo4xz'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_41_hpicpvt9'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_Thresholding_rtl_4__9z1675w'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_42_efgem2re'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingMaxPool_hls_4_lkq9dkom/project_StreamingMaxPool_hls_4/sol1/impl/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_43_ysmsfznn'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingDataWidthConverter_rtl_18_6os_0hj8'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_44_egzsh17s'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_FMPadding_rtl_5_pdyvlebd'.
+INFO: [Common 17-14] Message 'IP_Flow 19-1700' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/phu/Vivado/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: finn_design_MVAU_rtl_3_wstrm_0
+Command: synth_design -top finn_design_MVAU_rtl_3_wstrm_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 286419
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2775.215 ; gain = 304.777 ; free physical = 38149 ; free virtual = 79306
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:35]
+WARNING: [Synth 8-10636] default field of an assignment pattern cannot contain another assignment pattern [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:73]
+WARNING: [Synth 8-9661] initial value of parameter 'DEPTH' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:34]
+WARNING: [Synth 8-9661] initial value of parameter 'WIDTH' is omitted [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:35]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+WARNING: [Synth 8-10592] closing label :memstream_axi_wrapper is only allowed in SystemVerilog mode [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:123]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_MVAU_rtl_3_wstrm_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_3_wstrm_0/synth/finn_design_MVAU_rtl_3_wstrm_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi_wrapper' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6157] synthesizing module 'memstream_axi' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6157] synthesizing module 'axi4lite_if' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'axi4lite_if' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:31]
+WARNING: [Synth 8-689] width (32) of port connection 'ip_addr' does not match port width (14) of module 'axi4lite_if' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:105]
+INFO: [Synth 8-6157] synthesizing module 'memstream' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-3876] $readmem data file '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp//code_gen_ipgen_MVAU_rtl_3_0ba2zerz/memblock.dat' is read successfully [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:138]
+INFO: [Synth 8-6155] done synthesizing module 'memstream' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi.sv:33]
+INFO: [Synth 8-6155] done synthesizing module 'memstream_axi_wrapper' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/memstream_axi_wrapper.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_MVAU_rtl_3_wstrm_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_MVAU_rtl_3_wstrm_0/synth/finn_design_MVAU_rtl_3_wstrm_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element wready_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:135]
+WARNING: [Synth 8-6014] Unused sequential element internal_wack_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:154]
+WARNING: [Synth 8-7129] Port config_address[31] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[30] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[29] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[28] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[27] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[26] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[25] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[24] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[23] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[22] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[21] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[20] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[19] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[18] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[17] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[16] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[15] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[14] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[13] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[12] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[11] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[10] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port config_address[9] in module memstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module axi4lite_if is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module axi4lite_if is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2859.184 ; gain = 388.746 ; free physical = 37822 ; free virtual = 78980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2868.090 ; gain = 397.652 ; free physical = 37785 ; free virtual = 78942
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2868.090 ; gain = 397.652 ; free physical = 37785 ; free virtual = 78942
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2868.090 ; gain = 0.000 ; free physical = 37778 ; free virtual = 78935
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2979.996 ; gain = 0.000 ; free physical = 37631 ; free virtual = 78787
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2997.809 ; gain = 17.812 ; free physical = 37613 ; free virtual = 78769
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2997.809 ; gain = 527.371 ; free physical = 38990 ; free virtual = 80145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3005.812 ; gain = 535.375 ; free physical = 38988 ; free virtual = 80144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3005.812 ; gain = 535.375 ; free physical = 38988 ; free virtual = 80143
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi4lite_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                               00 |                               00
+             STATE_WRITE |                               01 |                               10
+              STATE_READ |                               10 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi4lite_if'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 3005.812 ; gain = 535.375 ; free physical = 38706 ; free virtual = 79863
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 1     
+	               32 Bit    Registers := 9     
+	               14 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---RAMs : 
+	              96K Bit	(384 X 256 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 18    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/core/config_if/ip_addr_reg' and it is trimmed from '14' to '9' bits. [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ipshared/bcb1/hdl/axilite_if.v:153]
+WARNING: [Synth 8-7129] Port awprot[2] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[1] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awprot[0] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[1] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port awaddr[0] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[3] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[2] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[1] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port wstrb[0] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[2] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[1] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port arprot[0] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[1] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port araddr[0] in module finn_design_MVAU_rtl_3_wstrm_0 is either unconnected or has no load
+RAM ("finn_design_MVAU_rtl_3_wstrm_0/inst/core/mem/blkStage2.Mem_reg") is too shallow (depth = 384) to use URAM. Choosing BRAM instead of URAM 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3005.812 ; gain = 535.375 ; free physical = 37920 ; free virtual = 79077
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                    | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|finn_design_MVAU_rtl_3_wstrm_0 | inst/core/mem/blkStage2.Mem_reg | 384 x 256(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      |                 | 
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3447.930 ; gain = 977.492 ; free physical = 36435 ; free virtual = 77622
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3448.930 ; gain = 978.492 ; free physical = 36453 ; free virtual = 77611
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|Module Name                    | RTL Object                      | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+|finn_design_MVAU_rtl_3_wstrm_0 | inst/core/mem/blkStage2.Mem_reg | 384 x 256(READ_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      |                 | 
++-------------------------------+---------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/core/mem/blkStage2.Mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 36408 ; free virtual = 77566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34354 ; free virtual = 75513
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34354 ; free virtual = 75512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34351 ; free virtual = 75509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34351 ; free virtual = 75509
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34349 ; free virtual = 75507
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34348 ; free virtual = 75506
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     1|
+|2     |LUT2     |     2|
+|3     |LUT3     |    19|
+|4     |LUT4     |    38|
+|5     |LUT5     |    14|
+|6     |LUT6     |    90|
+|7     |RAMB36E2 |     4|
+|11    |FDCE     |    36|
+|12    |FDRE     |   563|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34348 ; free virtual = 75506
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3476.977 ; gain = 876.820 ; free physical = 34293 ; free virtual = 75451
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 3476.977 ; gain = 1006.539 ; free physical = 34293 ; free virtual = 75451
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3476.977 ; gain = 0.000 ; free physical = 34589 ; free virtual = 75748
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/core/mem/blkStage2.Mem_reg_0 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/core/mem/blkStage2.Mem_reg_1 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/core/mem/blkStage2.Mem_reg_2 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/core/mem/blkStage2.Mem_reg_3 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3476.977 ; gain = 0.000 ; free physical = 34357 ; free virtual = 75519
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e2fc5a7d
+INFO: [Common 17-83] Releasing license: Synthesis
+144 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 3476.977 ; gain = 2054.469 ; free physical = 34351 ; free virtual = 75513
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2723.513; main = 2433.656; forked = 387.471
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4457.809; main = 3459.305; forked = 1104.688
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3483.312 ; gain = 0.000 ; free physical = 34348 ; free virtual = 75509
+INFO: [Common 17-1381] The checkpoint '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_3_wstrm_0_synth_1/finn_design_MVAU_rtl_3_wstrm_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP finn_design_MVAU_rtl_3_wstrm_0, cache-ID = f72ce78e144c02ee
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3483.312 ; gain = 0.000 ; free physical = 34252 ; free virtual = 75414
+INFO: [Common 17-1381] The checkpoint '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_MVAU_rtl_3_wstrm_0_synth_1/finn_design_MVAU_rtl_3_wstrm_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file finn_design_MVAU_rtl_3_wstrm_0_utilization_synth.rpt -pb finn_design_MVAU_rtl_3_wstrm_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 10:10:23 2024...

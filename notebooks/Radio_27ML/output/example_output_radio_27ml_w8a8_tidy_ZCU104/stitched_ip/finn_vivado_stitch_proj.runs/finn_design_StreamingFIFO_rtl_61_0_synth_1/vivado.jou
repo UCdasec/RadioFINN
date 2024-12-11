@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Dec 11 10:06:23 2024
+# Process ID: 267798
+# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_61_0_synth_1
+# Command line: vivado -log finn_design_StreamingFIFO_rtl_61_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_StreamingFIFO_rtl_61_0.tcl
+# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_61_0_synth_1/finn_design_StreamingFIFO_rtl_61_0.vds
+# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_61_0_synth_1/vivado.jou
+# Running On        :Titan-I7
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.5 LTS
+# Processor Detail  :Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+# CPU Frequency     :3700.000 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :67352 MB
+# Swap memory       :32767 MB
+# Total Virtual     :100120 MB
+# Available Virtual :82351 MB
+#-----------------------------------------------------------
+source finn_design_StreamingFIFO_rtl_61_0.tcl -notrace

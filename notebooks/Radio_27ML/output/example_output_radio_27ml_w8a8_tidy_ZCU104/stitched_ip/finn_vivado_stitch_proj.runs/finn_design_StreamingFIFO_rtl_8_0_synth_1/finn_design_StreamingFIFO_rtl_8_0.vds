@@ -3,26 +3,26 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Wed Dec 11 09:14:07 2024
-# Process ID: 161425
-# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1
+# Start of session at: Wed Dec 11 09:51:13 2024
+# Process ID: 207206
+# Current directory: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1
 # Command line: vivado -log finn_design_StreamingFIFO_rtl_8_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source finn_design_StreamingFIFO_rtl_8_0.tcl
-# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1/finn_design_StreamingFIFO_rtl_8_0.vds
-# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1/vivado.jou
+# Log file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1/finn_design_StreamingFIFO_rtl_8_0.vds
+# Journal file: /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1/vivado.jou
 # Running On        :Titan-I7
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.5 LTS
 # Processor Detail  :Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
-# CPU Frequency     :3700.000 MHz
+# CPU Frequency     :4357.136 MHz
 # CPU Physical cores:6
 # CPU Logical cores :12
 # Host memory       :67352 MB
 # Swap memory       :32767 MB
 # Total Virtual     :100120 MB
-# Available Virtual :94167 MB
+# Available Virtual :91029 MB
 #-----------------------------------------------------------
 source finn_design_StreamingFIFO_rtl_8_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1409.539 ; gain = 0.023 ; free physical = 46770 ; free virtual = 87558
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1408.570 ; gain = 0.023 ; free physical = 43715 ; free virtual = 84554
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/finn-rtllib/memstream'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0'.
@@ -133,46 +133,46 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 162022
+INFO: [Synth 8-7075] Helper process launched with PID 207307
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2778.480 ; gain = 303.777 ; free physical = 36462 ; free virtual = 77251
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2778.512 ; gain = 303.777 ; free physical = 34748 ; free virtual = 75587
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/synth/finn_design_StreamingFIFO_rtl_8_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/synth/finn_design_StreamingFIFO_rtl_8_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'StreamingFIFO_rtl_8' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_8_f9kiaohv/StreamingFIFO_rtl_8.v:32]
 INFO: [Synth 8-6157] synthesizing module 'Q_srl' [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0/Q_srl.v:72]
 	Parameter depth bound to: 2 - type: integer 
 	Parameter width bound to: 512 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'Q_srl' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0/Q_srl.v:72]
 INFO: [Synth 8-6155] done synthesizing module 'StreamingFIFO_rtl_8' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_8_f9kiaohv/StreamingFIFO_rtl_8.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/synth/finn_design_StreamingFIFO_rtl_8_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'finn_design_StreamingFIFO_rtl_8_0' (0#1) [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.gen/sources_1/bd/finn_design/ip/finn_design_StreamingFIFO_rtl_8_0/synth/finn_design_StreamingFIFO_rtl_8_0.v:53]
 WARNING: [Synth 8-6014] Unused sequential element addr_full_reg was removed.  [/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/tmp/code_gen_ipgen_StreamingFIFO_rtl_0_rjie33l0/Q_srl.v:144]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2860.449 ; gain = 385.746 ; free physical = 35979 ; free virtual = 76755
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2860.449 ; gain = 385.715 ; free physical = 33820 ; free virtual = 74660
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2860.449 ; gain = 385.746 ; free physical = 35974 ; free virtual = 76750
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2863.418 ; gain = 388.684 ; free physical = 33797 ; free virtual = 74637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2860.449 ; gain = 385.746 ; free physical = 35974 ; free virtual = 76750
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2863.418 ; gain = 388.684 ; free physical = 33797 ; free virtual = 74637
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2860.449 ; gain = 0.000 ; free physical = 35958 ; free virtual = 76733
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2863.418 ; gain = 0.000 ; free physical = 33753 ; free virtual = 74592
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2957.082 ; gain = 0.000 ; free physical = 35802 ; free virtual = 76577
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2965.879 ; gain = 0.000 ; free physical = 33161 ; free virtual = 74003
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2978.895 ; gain = 21.812 ; free physical = 35795 ; free virtual = 76571
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2989.691 ; gain = 23.812 ; free physical = 33156 ; free virtual = 73998
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2978.895 ; gain = 504.191 ; free physical = 35553 ; free virtual = 76331
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2989.691 ; gain = 514.957 ; free physical = 32836 ; free virtual = 73680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -180,13 +180,13 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2986.898 ; gain = 512.195 ; free physical = 35553 ; free virtual = 76331
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2997.695 ; gain = 522.961 ; free physical = 32836 ; free virtual = 73680
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2986.898 ; gain = 512.195 ; free physical = 35553 ; free virtual = 76331
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2997.695 ; gain = 522.961 ; free physical = 32836 ; free virtual = 73680
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Q_srl'
 ---------------------------------------------------------------------------------------------------
@@ -198,7 +198,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Q_srl
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Q_srl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2986.898 ; gain = 512.195 ; free physical = 35551 ; free virtual = 76330
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2997.695 ; gain = 522.961 ; free physical = 32830 ; free virtual = 73675
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -235,25 +235,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2986.898 ; gain = 512.195 ; free physical = 35487 ; free virtual = 76267
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2997.695 ; gain = 522.961 ; free physical = 32820 ; free virtual = 73665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3434.992 ; gain = 960.289 ; free physical = 33400 ; free virtual = 74182
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3436.781 ; gain = 962.047 ; free physical = 31348 ; free virtual = 72197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3435.992 ; gain = 961.289 ; free physical = 33280 ; free virtual = 74061
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3437.781 ; gain = 963.047 ; free physical = 31310 ; free virtual = 72159
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3454.016 ; gain = 979.312 ; free physical = 33155 ; free virtual = 73937
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3454.805 ; gain = 980.070 ; free physical = 31245 ; free virtual = 72094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -271,37 +271,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33103 ; free virtual = 73883
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30522 ; free virtual = 71371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33103 ; free virtual = 73883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30522 ; free virtual = 71371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33103 ; free virtual = 73883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30520 ; free virtual = 71369
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33103 ; free virtual = 73883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30519 ; free virtual = 71369
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33762 ; free virtual = 74542
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30486 ; free virtual = 71335
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33761 ; free virtual = 74542
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30485 ; free virtual = 71334
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -325,17 +325,17 @@ Report Cell Usage:
 |6     |FDSE |     6|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 33753 ; free virtual = 74533
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30485 ; free virtual = 71334
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3463.922 ; gain = 870.773 ; free physical = 34028 ; free virtual = 74809
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3463.922 ; gain = 989.219 ; free physical = 34028 ; free virtual = 74809
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 3465.711 ; gain = 864.703 ; free physical = 30755 ; free virtual = 71604
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 3465.711 ; gain = 990.977 ; free physical = 30755 ; free virtual = 71604
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3463.922 ; gain = 0.000 ; free physical = 34331 ; free virtual = 75111
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3465.711 ; gain = 0.000 ; free physical = 31084 ; free virtual = 71933
 WARNING: [Netlist 29-101] Netlist 'finn_design_StreamingFIFO_rtl_8_0' is not ideal for floorplanning, since the cellview 'Q_srl' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3463.922 ; gain = 0.000 ; free physical = 34278 ; free virtual = 75054
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3465.711 ; gain = 0.000 ; free physical = 31253 ; free virtual = 72102
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -343,19 +343,11 @@ Synth Design complete | Checksum: b40508d4
 INFO: [Common 17-83] Releasing license: Synthesis
 125 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:37 . Memory (MB): peak = 3463.922 ; gain = 2043.414 ; free physical = 34278 ; free virtual = 75054
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2527.035; main = 2411.609; forked = 325.592
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4291.766; main = 3446.250; forked = 1047.707
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:35 . Memory (MB): peak = 3465.711 ; gain = 2045.172 ; free physical = 31234 ; free virtual = 72083
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2495.877; main = 2402.927; forked = 364.388
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 4284.098; main = 3448.039; forked = 1104.688
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3470.258 ; gain = 0.000 ; free physical = 34278 ; free virtual = 75054
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3472.047 ; gain = 0.000 ; free physical = 31237 ; free virtual = 72086
 INFO: [Common 17-1381] The checkpoint '/home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/example_output_radio_27ml_w8a8_tidy_ZCU104/stitched_ip/finn_vivado_stitch_proj.runs/finn_design_StreamingFIFO_rtl_8_0_synth_1/finn_design_StreamingFIFO_rtl_8_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file finn_design_StreamingFIFO_rtl_8_0_utilization_synth.rpt -pb finn_design_StreamingFIFO_rtl_8_0_utilization_synth.pb
-ERROR: Unable to successfully create or copy the sub-design checkpoint file.
-ERROR: Unable to successfully create or copy the sub-design checkpoint file.
-    while executing
-"error "ERROR: Unable to successfully create or copy the sub-design checkpoint file.""
-    invoked from within
-"if { [catch {
-  file copy -force /home/phu/repos/PytorchModClassNew/RadioFINN/notebooks/Radio_27ML/output/output_radio_27ml_w8a8_tidy_ZCU104/stitched_..."
-    (file "finn_design_StreamingFIFO_rtl_8_0.tcl" line 260)
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 09:14:56 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 09:52:01 2024...
