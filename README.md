@@ -21,5 +21,5 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
    ◦ ```export FINN_XILINX_VERSION = ``` ```2024.1``` (or different version)
 
 3. Run ```./run-docker.sh quicktest```. This will check if everything is configured correctly. 
-4. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/finn/notebooks/``` as the main workspace.
+4. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
 5. To train and export driver file on FPGA, follow the ```build_and_export_model_driver_radio_27ml.ipynb``` notebook.
