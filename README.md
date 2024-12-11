@@ -5,6 +5,8 @@ Forked from FINN repository: https://github.com/Xilinx/finn
 ## Contacts:
 Boyang Wang, boyang.wang@uc.edu
 
+Ryan Evans evans2ra@mail.uc.edu
+
 Phu Le, lepq@mail.uc.edu
 
 ## Dataset:
