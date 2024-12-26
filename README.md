@@ -1,6 +1,12 @@
-# RadioFINN
+# Tutorial: Generating Neural Networks on FPGAs for Modulation Classification using FINN.
 
-Forked from FINN repository: https://github.com/Xilinx/finn
+# Overview 
+
+This tutorial explains how to generate a quantized neural network to perform modulation classification on RF signals using the FINN framework. The quantized neural network can be operated on a FPGA with high performance and low memory. FINN is an end-to-end framework that can help users transform a neural network written in PyTorch to a quantized neural network implemented in hardware description language at the RTL level. The quantized neural network can be further compiled into a bitstream file and uploaded to a FPGA. In other words, FINN is a High Level Synthesis tool, specifically for generating neural networks.
+
+This tutorial describes the entire end-to-end process using modulation classification over RF signals as an example. It starts from a neural network performing modulation classification over a dataset named RadioML 2021 and ends with a quantized neural network running the modulation classification on an AMD/Xilinx Zynq UltraScale+ MPSoC ZCU104 Evaluation FPGA board.
+
+This repo is forked from the official FINN repository (https://github.com/Xilinx/finn). We add the description and code for this example of modulation classification over RF signals on RadioML 2021 dataset.  
 
 ## Contacts:
 Boyang Wang, boyang.wang@uc.edu
