@@ -51,6 +51,9 @@ notebooks/Radio_27ML/tmp/*
 .idea
 tags
 
+#dataset
+notebooks/Radio_27ML/datasets/RADIOML_2021_07_INT8.hdf5
+
 # Package files
 *.egg
 *.eggs/
