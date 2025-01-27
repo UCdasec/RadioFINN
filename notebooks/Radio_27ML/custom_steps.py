@@ -47,15 +47,3 @@ def step_convert_final_layers(model: ModelWrapper, cfg: DataflowBuildConfig):
     model = model.transform(GiveUniqueNodeNames())
     return model
 
-
-def step_custom_fifo(model: ModelWrapper, cfg: DataflowBuildConfig):
-    # print the names of the supported PYNQ boards
-    from finn.util.basic import pynq_part_map
-
-    # print(pynq_part_map.keys())
-    # change this if you have a different PYNQ board, see list above
-    pynq_board = "ZCU104"
-    fpga_part = pynq_part_map[pynq_board]
-    # print(fpga_part)
-    target_clk_ns = 10
-    model = model.transform(InsertAndSetFIFODepths(fpgapart=fpga_part, clk_ns=target_clk_ns))
