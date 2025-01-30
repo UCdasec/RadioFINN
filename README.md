@@ -30,8 +30,8 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
 4. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
 5. To train and export driver file on FPGA, follow the tutorial notebooks.
 
-   ◦ [Optional] `build_original_model.ipynb` is a tutorial to build the original model using only Pytorch
+   ◦ [<code style="color : orange">Optional</code>] `build_original_model.ipynb` is a tutorial to build the original model using only Pytorch
    
    ◦ `build_quantized_model.ipynb` is a tutorial to build the quantized model using only Brevitas and Pytorch. The model from this step will be then used for the next steps
 
-   ◦ `build_model_accelerator.ipynb` is a tutorial to set up the builder to transform the model into a bitfile
+   ◦ `build_model_accelerator.ipynb` is a tutorial to set up the builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
