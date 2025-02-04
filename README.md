@@ -22,7 +22,7 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
 1. Clone the repository
 2. Set up ```FINN_XILINX_PATH``` , ```FINN_XILINX_VERSION``` environment variables pointing respectively to the Xilinx tools installation directory and version
 
-   ◦ ```export FINN_XILINX_PATH = ``` ```/.../Vivado``` (directory should have ```/Vivado``` and ```/Vitis_HLS``` directory)
+   ◦ ```export FINN_XILINX_PATH = ``` ```/.../Vivado``` (directory should have ```/Vivado``` and ```/Vitis_HLS``` directory. For example, commonly this path will be /tools/Xilinx/Vivado)
    
    ◦ ```export FINN_XILINX_VERSION = ``` ```2024.1``` (or different version)
 
