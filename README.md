@@ -41,3 +41,17 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
 export FINN_XILINX_PATH=/tools/Xilinx/Vivado/
 export FINN_XILINX_VERSION=2024.1
 ```
+
+
+There is an issue where you may be unable to run docker as rootless while attempting to give the container access to gpus. Therefore:
+
+1. First make sure you have nvidia-container-toolkit installed: `sudo apt install nvidia-container-toolkiti`
+2. Second make sure you have docker rootless installed: 
+```bash
+sudo apt-get install -y dbus-user-session
+sudo apt-get install -y uidmap
+sudo apt-get install docker-ce-rootless-extras
+```
+3. Open the file `/etc/nvidia-container-runtime/config.toml`. Find the heading [nvidia-container-cli], and make sure you have "no-cgroups=true"
+
+
