@@ -35,3 +35,9 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
    ◦ `build_quantized_model.ipynb` is a tutorial to build the quantized model using only Brevitas and Pytorch. The model from this step will be then used for the next steps
 
    ◦ `build_model_accelerator.ipynb` is a tutorial to set up the builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
+
+
+```bash
+export FINN_XILINX_PATH=/tools/Xilinx/Vivado/
+export FINN_XILINX_VERSION=2024.1
+```
