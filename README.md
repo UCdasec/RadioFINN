@@ -19,30 +19,33 @@ Phu Le, lepq@mail.uc.edu
 https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a85/notebooks/Radio_27ML/datasets/Get_dataset.md
 
 ## Step to reproduce:
-1. Clone the repository
-2. Set up ```FINN_XILINX_PATH``` , ```FINN_XILINX_VERSION``` environment variables pointing respectively to the Xilinx tools installation directory and version
+1. Install Docker to run without root. (Further instruction is provided below)
+2. Clone the repository
+3. Set up ```FINN_XILINX_PATH``` , ```FINN_XILINX_VERSION``` environment variables pointing respectively to the Xilinx tools installation directory and version
 
    ◦ ```export FINN_XILINX_PATH = ``` ```/.../Vivado``` (directory should have ```/Vivado``` and ```/Vitis_HLS``` directory. For example, commonly this path will be /tools/Xilinx/Vivado)
    
    ◦ ```export FINN_XILINX_VERSION = ``` ```2024.1``` (or different version)
 
-3. Run ```./run-docker.sh quicktest```. This will check if everything is configured correctly. 
-4. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
-5. To train and export driver file on FPGA, follow the tutorial notebooks.
+   ```bash
+   export FINN_XILINX_PATH=/tools/Xilinx/Vivado/
+   export FINN_XILINX_VERSION=2024.1
+   ```
+
+4. Run ```./run-docker.sh quicktest```. This will check if everything is configured correctly. 
+5. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
+6. To train and export driver file on FPGA, follow the tutorial notebooks.
 
    ◦ [<code style="color : orange">Optional</code>] `build_original_model.ipynb` is a tutorial to build the original model using only Pytorch
    
    ◦ `build_quantized_model.ipynb` is a tutorial to build the quantized model using only Brevitas and Pytorch. The model from this step will be then used for the next steps
 
-   ◦ `build_model_accelerator.ipynb` is a tutorial to set up the builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
+   ◦ `build_model_post_network_surgery.ipynb` is a tutorial to perform network surgery on the onnx model, preparing for the next streamlining step
+
+   ◦ `build_model_accelerator.ipynb` is a tutorial to set up the dataflow builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
 
 
-```bash
-export FINN_XILINX_PATH=/tools/Xilinx/Vivado/
-export FINN_XILINX_VERSION=2024.1
-```
-
-
+### Configure Rootless Docker:
 There is an issue where you may be unable to run docker as rootless while attempting to give the container access to gpus. Therefore:
 
 1. First make sure you have nvidia-container-toolkit installed: `sudo apt install nvidia-container-toolkiti`
