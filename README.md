@@ -58,3 +58,4 @@ sudo apt-get install docker-ce-rootless-extras
 3. Open the file `/etc/nvidia-container-runtime/config.toml`. Find the heading [nvidia-container-cli], and make sure you have "no-cgroups=true"
 
 
+export FINN_XILINX_VERSION=2024.1
