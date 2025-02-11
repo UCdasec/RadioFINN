@@ -28,7 +28,7 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
    ◦ ```export FINN_XILINX_VERSION = ``` ```2024.1``` (or different version)
 
    ```bash
-   export FINN_XILINX_PATH=/tools/Xilinx/Vivado/
+   export FINN_XILINX_PATH=/tools/Xilinx
    export FINN_XILINX_VERSION=2024.1
    ```
 
