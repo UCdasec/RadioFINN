@@ -19,11 +19,39 @@ Phu Le, lepq@mail.uc.edu
 https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a85/notebooks/Radio_27ML/datasets/Get_dataset.md
 
 ## Step to reproduce:
-1. Install Docker to run without root. (Further instruction is provided below)
-2. Clone the repository
-3. Set up ```FINN_XILINX_PATH``` , ```FINN_XILINX_VERSION``` environment variables pointing respectively to the Xilinx tools installation directory and version
 
-   ◦ ```export FINN_XILINX_PATH = ``` ```/.../Vivado``` (directory should have ```/Vivado``` and ```/Vitis_HLS``` directory. For example, commonly this path will be /tools/Xilinx/Vivado)
+#### Environment Part 1 - Vivado and Vitis (Xilinx packages)
+First you need to install Vivado and Vitis from the Xilinx website. Install on a linux system and
+for reproducability _do not_ alter the install paths unless you know what you're doing. 
+
+The linux installer can be found here: https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2024-1.html
+
+You must install both:
+- Vivado 
+- Vitis 
+
+With the default installer on a linux system, these packages will install to the `/tools/Xilinx` folder. 
+
+
+### Environment Part 2 - Rootless Docker:
+There is an issue where you may be unable to run docker as rootless while attempting to give the container access to gpus. Therefore:
+
+1. First make sure you have nvidia-container-toolkit installed: `sudo apt install nvidia-container-toolkiti`
+2. Second make sure you have docker rootless installed: 
+```bash
+sudo apt-get install -y dbus-user-session
+sudo apt-get install -y uidmap
+sudo apt-get install docker-ce-rootless-extras
+```
+3. Open the file `/etc/nvidia-container-runtime/config.toml`. Find the heading [nvidia-container-cli], and make sure you have "no-cgroups=true"
+
+
+### Environment Part 3 - FINN Repo:
+
+1. Clone the repository
+2. Define ```FINN_XILINX_PATH``` , ```FINN_XILINX_VERSION``` environment variables pointing respectively to the Xilinx tools installation directory and version. We have a provided default environment in the .env file 
+
+   ◦ ```export FINN_XILINX_PATH = <YOUR_XILINX_INSTALL_PATH>``` (directory by default is `/tools/Xilinx` and will contain`Vivado` and `Vitis_HLS` directories)
    
    ◦ ```export FINN_XILINX_VERSION = ``` ```2024.1``` (or different version)
 
@@ -44,18 +72,3 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
 
    ◦ `build_model_accelerator.ipynb` is a tutorial to set up the dataflow builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
 
-
-### Configure Rootless Docker:
-There is an issue where you may be unable to run docker as rootless while attempting to give the container access to gpus. Therefore:
-
-1. First make sure you have nvidia-container-toolkit installed: `sudo apt install nvidia-container-toolkiti`
-2. Second make sure you have docker rootless installed: 
-```bash
-sudo apt-get install -y dbus-user-session
-sudo apt-get install -y uidmap
-sudo apt-get install docker-ce-rootless-extras
-```
-3. Open the file `/etc/nvidia-container-runtime/config.toml`. Find the heading [nvidia-container-cli], and make sure you have "no-cgroups=true"
-
-
-export FINN_XILINX_VERSION=2024.1
