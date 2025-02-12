@@ -153,14 +153,18 @@ else
 fi
 
 
-if [ "$FINN_DOCKER_GPU" != 0 ] && [ -z "$FINN_SINGULARITY" ];then
-  gecho "nvidia-docker detected, enabling GPUs"
-  if [ ! -z "$NVIDIA_VISIBLE_DEVICES" ];then
+#if [ "$FINN_DOCKER_GPU" != 0 ] && [ -z "$FINN_SINGULARITY" ];then
+if [ ! -z "$NVIDIA_VISIBLE_DEVICES" ];then
     FINN_DOCKER_EXTRA+="--runtime nvidia -e NVIDIA_VISIBLE_DEVICES=$NVIDIA_VISIBLE_DEVICES "
   else
     FINN_DOCKER_EXTRA+="--gpus all "
-  fi
 fi
+
+#else
+#    gecho "No gpu detected... exiting"
+#    exit
+#fi
+
 
 VIVADO_HLS_LOCAL=$VIVADO_PATH
 VIVADO_IP_CACHE=$FINN_HOST_BUILD_DIR/vivado_ip_cache
