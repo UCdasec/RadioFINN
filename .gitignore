@@ -102,3 +102,4 @@ notebooks/end2end_example/**/*.onnx
 deps/
 
 ./notebooks/Radio_27ML/27ml_rf/
+notebooks/Radio_27ML/tmp
