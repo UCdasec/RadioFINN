@@ -82,23 +82,23 @@ MANIFEST
 .venv*/
 
 # SSH key dir mounted into Docker
-/ssh_keys/
+ssh_keys/
 
 # PYNQ board files
-/board_files/
+board_files/
 
 # datasets for testing
-/dataset/
-/data/
+dataset/
+data/
 *.csv
 
 # Google Drive key for dashboard
-/gdrive-key/
+gdrive-key/
 
 # generated files as part of end2end notebooks
-/notebooks/end2end_example/**/*.onnx
+notebooks/end2end_example/**/*.onnx
 
 # downloaded dep repos
-/deps/
+deps/
 
-/notebooks/Radio_27ML/27ml_rf/models/
+./notebooks/Radio_27ML/27ml_rf/
