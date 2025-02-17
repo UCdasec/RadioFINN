@@ -100,3 +100,5 @@ MANIFEST
 
 # downloaded dep repos
 /deps/
+
+/notebooks/Radio_27ML/27ml_rf/models/
