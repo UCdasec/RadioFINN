@@ -72,3 +72,18 @@ sudo apt-get install docker-ce-rootless-extras
 
    ◦ `build_model_accelerator.ipynb` is a tutorial to set up the dataflow builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
 
+
+### Roadmap 
+
+- [ ] Add a validation step for good practice in vanilla model 
+- [ ] Write a 'standard' pytorch model for VGG 
+- [ ] Write a CLI to train model 
+- [ ] Write a CLI to test model 
+- [ ] Write a CLI to perform surgery
+- [ ] Write a CLI to create bitstream
+- [ ] documenation
+    - [ ] Add information about quantizers
+    - [ ] Add information about learning rate scheduler
+- [ ] Environment (tentative): Get nix shell working 
+
+
