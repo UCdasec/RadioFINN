@@ -64,14 +64,15 @@ sudo apt-get install docker-ce-rootless-extras
 5. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
 6. To train and export driver file on FPGA, follow the tutorial notebooks.
 
-   ◦ [<code style="color : orange">Optional</code>] `build_original_model.ipynb` is a tutorial to build the original model using only Pytorch
+   ◦ [<code style="color : orange">Optional</code>] `Tutorial1_Dataset_and_Vanilla_model.ipynb` is a tutorial to build the original model using only Pytorch
    
-   ◦ `build_quantized_model.ipynb` is a tutorial to build the quantized model using only Brevitas and Pytorch. The model from this step will be then used for the next steps
+   ◦ `Tutorial2_Brevitas_model.ipynb` is a tutorial to build the quantized model using only Brevitas and Pytorch. The model from this step will be then used for the next steps
 
-   ◦ `build_model_post_network_surgery.ipynb` is a tutorial to perform network surgery on the onnx model, preparing for the next streamlining step
+   ◦ `Tutorial3_Brevitas_Model_transform.ipynb` is the next tutorial to perform network surgery on the onnx model by manually removing and adding nodes to the model anatomy, preparing for the next streamlining step
 
-   ◦ `build_model_accelerator.ipynb` is a tutorial to set up the dataflow builder to transform the model into a bitfile [<code style="color : orange">Notebook not finished</code>]
+   ◦ `Tutorial4_Build_Accelerator.ipynb` is the next tutorial to set up the configuration with custom and pre-existing steps and parameters to instruct finn dataflow-builder to generate the driver and bitfile
 
+   ◦ `Tutorial5_Load_Bitsteam_on_FPGA.ipynb` is the final tutorial which is run on the FPGA to run benchmark and validation of the generated bitfile
 
 ### Roadmap 
 
