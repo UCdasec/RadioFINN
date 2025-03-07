@@ -38,7 +38,7 @@ def train(model, train_loader:DataLoader, optimizer, criterion):
     for (inputs, target, snr) in tqdm(train_loader, desc="Training Batches", leave=False):   
 
         #Converting inputs to float because for some reason torch read inputs as char type
-        inputs = inputs.to(gpu)#.float() 
+        inputs = inputs.to(gpu).float() 
         target = target.to(gpu)
         
         optimizer.zero_grad() 
