@@ -69,9 +69,9 @@ def test(model, test_loader, is_val:bool ):
         else:
             msg = "Testing"
         for (inputs, target, snr) in tqdm(test_loader, desc=msg, leave=False):
-            inputs = inputs.to('cuda')
+            inputs = inputs.to('cuda').float() 
             target = target.to('cuda')
-            target = target.argmax(dim=1, keepdim=True)
+
             output = model(inputs)
             prediction = output.argmax(dim=1) 
 
@@ -168,6 +168,7 @@ def run_test(weights: Path, dataset = Path("../datasets/RADIOML_2021_07_INT8.hdf
     # Define the model on load
     model = VGG(64, 128)
     model.load_state_dict(torch.load(weights, weights_only=True))
+    model.to('cuda')
 
     # Test the model
     acc = test(model, data_loader_test, False)
