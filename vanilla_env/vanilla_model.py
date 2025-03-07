@@ -60,8 +60,6 @@ def test(model, test_loader, is_val:bool ):
 
     # ensure model is in eval mode
     model.eval() 
-    y_true = []
-    y_pred = []
    
     correct = 0
     total = 0
@@ -75,10 +73,7 @@ def test(model, test_loader, is_val:bool ):
             target = target.to('cuda')
             target = target.argmax(dim=1, keepdim=True)
             output = model(inputs)
-            prediction = output.argmax(dim=1, keepdim=True)
-
-            y_true.extend(target.tolist()) 
-            y_pred.extend(prediction.reshape(-1).tolist())
+            prediction = output.argmax(dim=1) 
 
             correct += (target  == prediction).sum().item()
             total += len(target)
