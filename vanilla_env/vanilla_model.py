@@ -155,9 +155,33 @@ class VGG(nn.Module):
         x = self.fc3(x)
 
         return x
+
+
+@app.command()
+def run_test(weights: Path, dataset = Path("../datasets/RADIOML_2021_07_INT8.hdf5"), batch_size: int = 1024)->None:
+    """
+    Test the model on the provided dataset
+    """
+
+    if not dataset.is_file():
+        raise Exception()
+
+    # load data and create loaders
+    dataset = radioml_21_dataset(dataset)
+    data_loader_test = DataLoader(dataset, batch_size=batch_size, sampler=dataset.test_sampler)
+
+    # Define the model on load
+    model = VGG(64, 128)
+    model.load_state_dict(torch.load(weights, weights_only=True))
+
+    # Test the model
+    acc = test(model, data_loader_test, False)
+    print(f"The accuracy was {acc}")
+    return 
+
     
 @app.command()
-def run(base:Path):
+def train_and_test(base:Path):
     """
     Train and test the model !
     """
@@ -195,7 +219,6 @@ def run(base:Path):
     dataset_path = Path("../datasets/RADIOML_2021_07_INT8.hdf5")
     if not dataset_path.is_file():
         raise Exception()
-
 
     # load data and create loaders
     dataset = radioml_21_dataset(dataset_path)
