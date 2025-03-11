@@ -3,7 +3,13 @@
 
 
 ## Setup 
-I have an install script! Try it, you will have to entire your password; but 
+I have an install script! 
+```bash
+./setup_env.sh
+```
+
+
+Try it, you will have to entire your password; but 
 _dont be shocked if the script doesnt work_. 
 
 If that script doesn't work there three commands you need to run:
