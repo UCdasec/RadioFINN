@@ -38,13 +38,14 @@ def brevitas_train():
     """
     return 
 
+
+
 @app.command()
 def transform_and_compile():
     """
     Trasnform the input onnx to 
     finn compat model!
     """
-
     return
 
 
