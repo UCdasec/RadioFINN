@@ -20,7 +20,7 @@ https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a
 
 ## Tutorial Videos: 
 
-In addition to the content below, we also provide a sequence of 6 tutorial videos to help readers understand the details of this complicate process. The tutorial videos were made by Phu Le (an undergrad in Computer Engineering at the University of Cincinnati)
+In addition to the content below, we also provide a sequence of 6 tutorial videos to help readers understand the details of this complicate process and reproduce results. The tutorial videos were made by Phu Le (an undergrad in Computer Engineering at the University of Cincinnati)
 
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Setup/1_ksjcqbi8 
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook1/1_o8pg0ps6
