@@ -29,6 +29,10 @@ https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FIN
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook4/1_nj3siey4
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook5/1_4x06jds6 
 
+## Kit Used:
+For this tutorial, we used the ZCU104 board.
+![ZCU104_board](https://raw.githubusercontent.com/UCdasec/RadioFINN/refs/heads/main/ref_images/zcu104.jpg)
+
 
 ## Step to reproduce:
 
