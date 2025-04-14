@@ -18,6 +18,18 @@ Phu Le, lepq@mail.uc.edu
 ## Dataset:
 https://github.com/UCdasec/RadioFINN/blob/92305c033b8f1bd0d69b242bb61379416df30a85/notebooks/Radio_27ML/datasets/Get_dataset.md
 
+## Tutorial Videos: 
+
+In addition to the content below, we also provide a sequence of 6 tutorial videos to help readers understand the details of this complicate process. The tutorial videos were made by Phu Le (an undergrad in Computer Engineering at the University of Cincinnati)
+
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Setup/1_ksjcqbi8 
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook1/1_o8pg0ps6
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook2/1_crz1qmte
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook3/1_hmqcjojz 
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook4/1_nj3siey4
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook5/1_4x06jds6 
+
+
 ## Step to reproduce:
 
 #### Environment Part 1 - Vivado and Vitis (Xilinx packages)
@@ -86,5 +98,4 @@ sudo apt-get install docker-ce-rootless-extras
     - [ ] Add information about quantizers
     - [ ] Add information about learning rate scheduler
 - [ ] Environment (tentative): Get nix shell working 
-
 
