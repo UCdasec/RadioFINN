@@ -66,7 +66,7 @@ def train(model, train_loader, optimizer, criterion):
         count+=1
     return total_loss / count
 
-def test(model, test_loader )->tuple[float,float]:    
+def brevitas_test(model, test_loader )->tuple[float,float]:    
 
     # ensure model is in eval mode
     model.eval() 
@@ -105,20 +105,13 @@ def test(model, test_loader )->tuple[float,float]:
     return correct / total, thres_correct / thres_total
 
 
-def train_model(model, dataset, chpt_path:Path, onnx_file:Path, early_stop: int = 10):
+def brevitas_train_model(model, dataset, chpt_path:Path, onnx_file:Path, early_stop: int = 10, batch_size: int = 1024, num_epochs: int = 100):
     """
-    Train path
+    Train a quant or vanilla model
     """
-
-    batch_size = 1024
-    num_epochs = 100
-
 
     data_loader_train = DataLoader(dataset, batch_size=batch_size, sampler=dataset.train_sampler)
     data_loader_val = DataLoader(dataset, batch_size=batch_size, sampler=dataset.val_sampler)
-    
-    #data_loader_train = DataLoader(train_dataset, batch_size=batch_size) 
-    #data_loader_val = DataLoader(val_dataset, batch_size=batch_size)
     
     best_val_acc = float('-inf')
     
@@ -138,7 +131,7 @@ def train_model(model, dataset, chpt_path:Path, onnx_file:Path, early_stop: int 
     for epoch in tqdm(range(num_epochs), desc="Epochs"):
 
         avg_loss = train(model, data_loader_train, optimizer, criterion)
-        val_acc, thres_val_ac = test(model, data_loader_val)
+        val_acc, thres_val_ac = brevitas_test(model, data_loader_val)
 
         if val_acc > best_val_acc:
             torch.save(model.state_dict(), chpt_path)
@@ -171,7 +164,7 @@ def train_model(model, dataset, chpt_path:Path, onnx_file:Path, early_stop: int 
     return running_loss, running_val_acc, training_time
 
 
-def train_test_save(model, base_dir:Path):
+def brevitas_train_test_save(model, base_dir:Path):
 
     if not base_dir.exists():
         base_dir.mkdir(parents=True)
@@ -183,7 +176,7 @@ def train_test_save(model, base_dir:Path):
     dataset = radioml_21_dataset(dataset_path)
 
     # train and load the best model
-    running_loss, val_acc, runtime = train_model(model, dataset, chpt_path, onnx_file)
+    running_loss, val_acc, runtime = brevitas_train_model(model, dataset, chpt_path, onnx_file)
     model.load_state_dict(torch.load(chpt_path))
     model.to('cuda')
 
@@ -192,7 +185,7 @@ def train_test_save(model, base_dir:Path):
 
     test_loader = DataLoader(dataset, batch_size=1024, sampler=dataset.test_sampler)
     start = time.time()
-    acc, six_acc= test(model, test_loader)
+    acc, six_acc= brevitas_test(model, test_loader)
     test_runtime = time.time() - start
 
     out = base_dir.joinpath('results.txt')

@@ -10,7 +10,7 @@ import h5py
 
 
 class radioml_21_dataset(Dataset):
-    def __init__(self, dataset_path):
+    def __init__(self, dataset_path:Path):
         super(radioml_21_dataset, self).__init__()
         h5_file = h5py.File(dataset_path,'r')
         self.data = h5_file['X']
