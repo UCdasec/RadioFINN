@@ -201,11 +201,12 @@ def brevitas_train_nieve(out:Path, bit_width: int, dataset:Path = Path("../datas
     with open(settings, 'w') as f:
         f.write(f"bit_width={bit_width}")
 
+    # See dataset for options to train on different db levels 
     dataset = radioml_21_dataset(dataset)
 
-    map = get_default_vgg_map(bit_width, bit_width,  load_bias_injector(bit_width))
-
-    model = load_mapped_vgg(map)
+    # Define our quantization map and load the model
+    quantize_map = get_default_vgg_map(bit_width, bit_width,  load_bias_injector(bit_width))
+    model = load_mapped_vgg(quantize_map)
 
     chpt = out.joinpath("model.pt")
     onnx = out.joinpath("model.onnx")
@@ -345,7 +346,7 @@ def build_acc(model:Path, output_dir:Path):
 
     cfg=start_dataflow("ZCU104", str(output_dir), str(model))
     organize_output_files(cfg, str(out))
-    print(f"Now, scp files in {out} to the fpga and run!")
+    print(f"Now, scp files in {output_dir} to the fpga and run!")
     return 
 
 
@@ -386,8 +387,8 @@ def organize_output_files(cfg, final_name):
         shutil.copytree(original_deploy_dir,new_deploy_dir)
 
     Path(new_deploy_dir.joinpath('datasets')).mkdir(exist_ok=True)
-    shutil.copy("Tutorial5_Load_Bitsteam_on_FPGA.ipynb",new_deploy_dir.joinpath("driver"))
 
+    shutil.copy("Tutorial5_Load_Bitstream_on_FPGA.ipynb",new_deploy_dir.joinpath("driver"))
 
     #rename all bit file to its model name for better readability\n",
     for f in files_to_check_and_rename:

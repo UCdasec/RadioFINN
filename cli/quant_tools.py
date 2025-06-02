@@ -95,7 +95,7 @@ def load_bias_injector(int):
         case _:
             raise Exception("No matching bias infjector")
 
-def get_default_vgg_map(w=8,a=8,b=Int8Bias)->VggMap:
+def get_default_vgg_map(w=8,a=8,b=IntBias)->VggMap:
     """
     Load a mapped VGG. This will load a dataclass that maps 
     quantization levels to the model layers
