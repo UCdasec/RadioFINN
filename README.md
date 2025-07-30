@@ -24,7 +24,7 @@ In addition to the content below, we also provide a sequence of 6 tutorial video
 
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Setup/1_ksjcqbi8 
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook1/1_o8pg0ps6
-https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook2/1_crz1qmte
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook2_v2/1_6rsd2lz4
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook3/1_hmqcjojz 
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook4/1_nj3siey4
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook5/1_4x06jds6 
