@@ -29,7 +29,8 @@ https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FIN
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook4/1_nj3siey4
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebook5/1_4x06jds6 
 
-https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebooks_4bit/1_z03c1m4l (video showing how to update parameters to generate a 4-bit neural network)
+(the following extra video showing how to update parameters in Notebook 2 and Notebook 5 to generate a 4-bit neural network and test it)
+https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebooks_4bit/1_z03c1m4l 
 
 ## Kit Used:
 For this tutorial, we used the ZCU104 board.
