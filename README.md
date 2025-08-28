@@ -32,6 +32,13 @@ https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FIN
 (the following extra video showing how to update parameters in Notebook 2 and Notebook 5 to generate a 4-bit neural network and test it)
 https://ceas.mediaspace.kaltura.com/media/Tutorial_Modulation_Classification_FINN_Notebooks_4bit/1_z03c1m4l 
 
+## Tutorial Document 
+
+We also provide a detailed document summarizing the results from each step for better understanding and reproducility. The pdf can be found below: 
+
+https://www.overleaf.com/read/fgrhcpzddbvf#da6238 
+
+
 ## Kit Used:
 For this tutorial, we used the ZCU104 board.
 ![ZCU104_board](https://raw.githubusercontent.com/UCdasec/RadioFINN/refs/heads/main/ref_images/zcu104.jpg)
