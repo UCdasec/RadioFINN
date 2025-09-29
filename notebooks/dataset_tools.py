@@ -87,8 +87,10 @@ class radioml_dataset(Dataset):
         self.train_sampler = torch.utils.data.SubsetRandomSampler(train_indices)
         self.val_sampler = torch.utils.data.SubsetRandomSampler(val_indices)
         self.test_sampler = torch.utils.data.SubsetRandomSampler(test_indices)
-        
+
+        #Find the dataset raw range
         self.raw_dataset_range:data_range=data_range(np.min(self.data),np.max(self.data))
+        
         self.quantization_range:data_range=quantization_range
         self.quantization_dtype=quantization_dtype
     def quantize(self, data):
