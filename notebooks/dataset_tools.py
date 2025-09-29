@@ -4,6 +4,10 @@ import numpy as np
 import h5py
 import torch
 
+# a data_range class that holds the min and max value
+# this class has function get_range() that well... returns the range (max-min)
+# technically this class is an overkill just to store 2 floats, but it makes
+# the projects more readable
 class data_range:
     def __init__(self, range_min:float, range_max:float):
         assert range_max>range_min,"max needs to be greater than min"
