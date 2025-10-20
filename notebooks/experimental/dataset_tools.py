@@ -5,10 +5,16 @@ import h5py
 import torch
 
 ###################################UTILITY CLASSES####################################
+
+# Base dataset quantizer class. 
+# The dataset_loader class "radioml_dataset" will use 
+#   any class derived from this to call the quantize() function to normalize its raw data
 class base_dataset_quantizer:
     def quantize(self, data):
         return data
 ##################SOME EXAMPLE BASED ON THE BASE QUANTIZER CLASS######################
+#TODO: implement a better dataset normalization besides these 2 
+
 # f(x)=ax+b mapping
 class full_linear_scale_quantizer(base_dataset_quantizer):
     def __init__(self, from_min:float, from_max:float, to_min:float, to_max:float, dtype):
@@ -22,7 +28,7 @@ class full_linear_scale_quantizer(base_dataset_quantizer):
         return quantized_data
 
 # f(x)=ax mapping 
-# For this project, we will use this one
+# For this project, we will temporarily use this one
 class simple_linear_scale_quantizer(base_dataset_quantizer):
     def __init__(self,input_scale:float, output_scale:float, dtype):
         #essentially we divide the input by input_scale to ideally normalized to [-1,1]
@@ -32,9 +38,11 @@ class simple_linear_scale_quantizer(base_dataset_quantizer):
         self.dtype=dtype
     def quantize(self, data):
         quantized_data=data*self.multiplier
+        #It might be better to use round to avoid 0-bias (In this context, numpy use banker's rounding)
         # quantized_data=np.round(quantized_data)
         quantized_data=quantized_data.astype(self.dtype)
         return quantized_data
+
 ######################################################################################
         
 class radioml_dataset(Dataset):
