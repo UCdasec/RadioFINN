@@ -15,6 +15,30 @@ class base_dataset_quantizer:
 ##################SOME EXAMPLE BASED ON THE BASE QUANTIZER CLASS######################
 #TODO: implement a better dataset normalization besides these 2 
 
+
+class standard_int8_norm(base_dataset_quantizer):
+    """Standard normalization in int8 range: [-127 : 128]
+
+    (1) Norm to range 0:1 -> (data - min) / (max-min)
+    (2) Norm to range 0:256 -> cur_norm * 256
+    (3) Norm to range -127:128 -> cur_norm -= 127
+    """
+    def __init__(self, data_min: float, data_max: float, dtype = np.int8):
+        self.min = data_min
+        self.max = data_max 
+        self.range = data_max - data_min
+        self.dtype = dtype
+    def quantize(self, data):
+
+        # Data in 0 to 1 
+        quant_data = ((data - self.max)/ self.range) 
+
+        # Data in -127 to 128
+        quant_data = (quant_data * 256) - 127
+
+        return quant_data.astype(self.dtype)
+
+
 # f(x)=ax+b mapping
 class full_linear_scale_quantizer(base_dataset_quantizer):
     def __init__(self, from_min:float, from_max:float, to_min:float, to_max:float, dtype):
