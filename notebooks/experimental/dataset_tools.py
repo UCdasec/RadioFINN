@@ -13,9 +13,6 @@ class base_dataset_quantizer:
     def quantize(self, data):
         return data
 ##################SOME EXAMPLE BASED ON THE BASE QUANTIZER CLASS######################
-#TODO: implement a better dataset normalization besides these 2 
-
-
 class standard_int8_norm(base_dataset_quantizer):
     """Standard normalization in int8 range: [-128 : 127]
 
