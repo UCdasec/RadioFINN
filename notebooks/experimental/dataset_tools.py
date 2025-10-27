@@ -17,11 +17,11 @@ class base_dataset_quantizer:
 
 
 class standard_int8_norm(base_dataset_quantizer):
-    """Standard normalization in int8 range: [-127 : 128]
+    """Standard normalization in int8 range: [-128 : 127]
 
     (1) Norm to range 0:1 -> (data - min) / (max-min)
-    (2) Norm to range 0:256 -> cur_norm * 256
-    (3) Norm to range -127:128 -> cur_norm -= 127
+    (2) Norm to range 0:255 -> cur_norm * 255
+    (3) Norm to range -128:127 -> cur_norm -= 128
     """
     def __init__(self, data_min: float, data_max: float, dtype = np.int8):
         self.min = data_min
@@ -33,8 +33,8 @@ class standard_int8_norm(base_dataset_quantizer):
         # Data in 0 to 1 
         quant_data = ((data - self.max)/ self.range) 
 
-        # Data in -127 to 128
-        quant_data = (quant_data * 256) - 127
+        # Data in -128 to 127
+        quant_data = (quant_data * 255) - 128
 
         return quant_data.astype(self.dtype)
 
