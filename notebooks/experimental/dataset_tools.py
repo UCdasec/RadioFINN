@@ -28,13 +28,32 @@ class standard_int8_norm(base_dataset_quantizer):
     def quantize(self, data):
 
         # Data in 0 to 1 
-        quant_data = ((data - self.max)/ self.range) 
+        quant_data = ((data - self.min)/ self.range) 
 
         # Data in -128 to 127
-        quant_data = (quant_data * 255) - 128
-
+        quant_data = (quant_data * 255.0) - 128.0
+        quant_data = np.round(quant_data)
         return quant_data.astype(self.dtype)
 
+class standard_int4_norm(base_dataset_quantizer):
+    """Standard normalization in int8 range: [-8 : 7]
+    (1) Norm to range 0:1 -> (data - min) / (max-min)
+    (2) Norm to range 0:15 -> cur_norm * 15
+    (3) Norm to range -8:7 -> cur_norm -= 8
+    """
+    def __init__(self, data_min: float, data_max: float, dtype = np.int8):
+        self.min = data_min
+        self.max = data_max 
+        self.range = data_max - data_min
+        self.dtype = dtype
+    def quantize(self, data):
+        # Data in 0 to 1 
+        quant_data = ((data - self.min)/ self.range) 
+        # Data in -8 to 7
+        quant_data = (quant_data * 15.0) - 8.0
+        quant_data = np.round(quant_data)
+        quant_data=np.clip(quant_data,-8.0,7.0)
+        return quant_data.astype(self.dtype)
 
 # f(x)=ax+b mapping
 class full_linear_scale_quantizer(base_dataset_quantizer):
