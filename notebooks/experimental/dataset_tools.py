@@ -55,6 +55,26 @@ class standard_int4_norm(base_dataset_quantizer):
         quant_data=np.clip(quant_data,-8.0,7.0)
         return quant_data.astype(self.dtype)
 
+class standard_int2_norm(base_dataset_quantizer):
+    """Standard normalization in int8 range: [-8 : 7]
+    (1) Norm to range 0:1 -> (data - min) / (max-min)
+    (2) Norm to range 0:3 -> cur_norm * 3
+    (3) Norm to range -2:1 -> cur_norm -= 2
+    """
+    def __init__(self, data_min: float, data_max: float, dtype = np.int8):
+        self.min = data_min
+        self.max = data_max 
+        self.range = data_max - data_min
+        self.dtype = dtype
+    def quantize(self, data):
+        # Data in 0 to 1 
+        quant_data = ((data - self.min)/ self.range) 
+        # Data in -2 to 1
+        quant_data = (quant_data * 3.0) - 2.0
+        quant_data = np.round(quant_data)
+        quant_data=np.clip(quant_data,-2.0,1.0)
+        return quant_data.astype(self.dtype)
+
 # f(x)=ax+b mapping
 class full_linear_scale_quantizer(base_dataset_quantizer):
     def __init__(self, from_min:float, from_max:float, to_min:float, to_max:float, dtype):
@@ -149,6 +169,38 @@ class radioml_dataset(Dataset):
     def __getitem__(self, idx):
         # transpose frame into Pytorch channels-first format (NCL = -1,2,1024)
         return self.quantize(self.data[idx]).transpose(), self.mod[idx], self.snr[idx]
+
+    def save_as_h5(self, output_path: str, 
+                   data_key: str = 'all_IQ', 
+                   mod_key: str = 'all_labels', 
+                   snr_key: str = 'all_SNRs',
+                   apply_quantization: bool = True):
+        
+        print(f"Saving dataset to {output_path}")
+        with h5py.File(output_path, 'w') as h5_out:
+            if apply_quantization:
+                print("Applying quantization...")
+                data_to_save = np.array([self.quantize(self.data[i]) for i in range(len(self))])
+            else:
+                print("Saving without quantization...")
+                data_to_save = np.array(self.data[:])
+            
+            # Save data
+            print(f"Creating dataset key '{data_key}' with shape {data_to_save.shape}")
+            h5_out.create_dataset(data_key, data=data_to_save)
+            
+            # Save modulation labels - reshape to match original format (N, 1)
+            mod_to_save = self.mod[:].reshape(-1, 1)
+            print(f"Creating dataset key '{mod_key}' with shape {mod_to_save.shape}")
+            h5_out.create_dataset(mod_key, data=mod_to_save)
+            
+            # Save SNR labels - reshape to match original format (N, 1)
+            snr_to_save = self.snr[:].reshape(-1, 1)
+            print(f"Creating dataset key '{snr_key}' with shape {snr_to_save.shape}")
+            h5_out.create_dataset(snr_key, data=snr_to_save)
+        
+        print(f"Dataset saved successfully to {output_path}")
     
+
     def __len__(self):
         return self.len
