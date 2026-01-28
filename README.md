@@ -70,7 +70,7 @@ sudo apt-get install -y uidmap
 sudo apt-get install docker-ce-rootless-extras
 ```
 3. Open the file `/etc/nvidia-container-runtime/config.toml`. Find the heading [nvidia-container-cli], and make sure you have "no-cgroups=true"
-
+4. Setting up rootless mode: https://docs.docker.com/engine/security/rootless/
 
 ### Environment Part 3 - FINN Repo:
 
