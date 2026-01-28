@@ -86,7 +86,7 @@ sudo apt-get install docker-ce-rootless-extras
    export FINN_XILINX_VERSION=2024.1
    ```
 
-4. Run ```./run-docker.sh quicktest```. This will check if everything is configured correctly. 
+4. Run ```./run-docker.sh quicktest```. This will check if everything is configured correctly. (In case the process has hiccups with permission issues, try deleting the /deps directory and run again)
 5. Finally, run ```bash run-docker.sh notebook```. This should open a notebook browser with ```/RadioFINN/notebooks/``` as the main workspace.
 6. To train and export driver file on FPGA, follow the tutorial notebooks.
 
