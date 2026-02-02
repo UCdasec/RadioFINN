@@ -9,6 +9,8 @@ import torch
 # Base dataset quantizer class. 
 # The dataset_loader class "radioml_dataset" will use 
 #   any class derived from this to call the quantize() function to normalize its raw data
+
+#use this if not quantizing anything. the dataset will load as is
 class base_dataset_quantizer:
     def quantize(self, data):
         return data
