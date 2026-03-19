@@ -52,7 +52,7 @@ notebooks/Radio_27ML/tmp/*
 tags
 
 #dataset
-notebooks/Radio_27ML/datasets/RADIOML_2021_07_INT8.hdf5
+notebooks/datasets/
 
 # Package files
 *.egg
@@ -103,3 +103,7 @@ deps/
 
 ./notebooks/Radio_27ML/27ml_rf/
 notebooks/Radio_27ML/tmp
+notebooks/archive/
+notebooks/deploy/
+notebooks/output/
+notebooks/tmp/
